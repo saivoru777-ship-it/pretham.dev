@@ -1,0 +1,570 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PRETHAM.DEV - 8-BIT PORTFOLIO</title>
+  <link rel="stylesheet" href="8bit-style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+</head>
+<body>
+  <!-- CRT Screen Effect -->
+  <div class="crt-overlay"></div>
+  <div class="scanlines"></div>
+
+  <!-- Starfield Background -->
+  <canvas id="starfield"></canvas>
+
+  <!-- Game Container -->
+  <div class="game-world">
+
+    <!-- Retro Header / HUD -->
+    <header class="game-hud">
+      <div class="hud-left">
+        <div class="pixel-text">PRETHAM</div>
+        <div class="lives">♥♥♥</div>
+      </div>
+      <div class="hud-center pixel-text blink">
+        ★ DEVELOPER LV.99 ★
+      </div>
+      <div class="hud-right pixel-text">
+        <div>SCORE</div>
+        <div class="score-num">999999</div>
+      </div>
+    </header>
+
+    <!-- Hero Section with Pixel Character -->
+    <section class="hero-world">
+      <div class="ground"></div>
+
+      <!-- Pixel Art Character (Indian boy, no glasses) -->
+      <div class="character-sprite bounce">
+        <!-- Character built with CSS pixels -->
+        <div class="char-head"></div>
+        <div class="char-body"></div>
+        <div class="char-legs"></div>
+      </div>
+
+      <!-- Speech Bubble -->
+      <div class="speech-bubble pixel-box">
+        <div class="bubble-arrow"></div>
+        <p class="pixel-text-sm typing">HEY! I'M PRETHAM_</p>
+        <p class="pixel-text-sm typing delay-1">I BUILD COOL STUFF!</p>
+        <p class="pixel-text-sm typing delay-2">PRESS START ▼</p>
+      </div>
+
+      <!-- Floating Coins -->
+      <div class="coins">
+        <div class="coin float-1">🪙</div>
+        <div class="coin float-2">🪙</div>
+        <div class="coin float-3">🪙</div>
+      </div>
+    </section>
+
+    <!-- Projects Section (Game Cartridges) -->
+    <section class="cartridge-select">
+      <h2 class="section-title pixel-text">
+        <span class="title-decoration">═════════════════════</span>
+        <span class="title-main">SELECT YOUR GAME</span>
+        <span class="title-decoration">═════════════════════</span>
+      </h2>
+
+      <div class="cartridges-grid">
+
+        <!-- Tenant Lease AI Cartridge -->
+        <div class="cartridge featured shake-on-hover">
+          <div class="cartridge-top">
+            <div class="cartridge-label">TENANT LEASE AI</div>
+            <div class="new-badge pixel-text-tiny blink">★NEW★</div>
+          </div>
+
+          <div class="cartridge-screen">
+            <div class="screen-content">
+              <div class="game-icon pulse">🏠</div>
+              <div class="scan-line"></div>
+            </div>
+          </div>
+
+          <div class="cartridge-info">
+            <p class="pixel-text-tiny">CHROME EXTENSION</p>
+            <div class="power-level">
+              <span class="pixel-text-tiny">POWER:</span>
+              <div class="power-bar">
+                <div class="power-fill" data-power="95"></div>
+              </div>
+            </div>
+          </div>
+
+          <ul class="feature-list pixel-text-tiny">
+            <li>▶ AI LEASE ANALYZER</li>
+            <li>▶ RED FLAG DETECTOR</li>
+            <li>▶ LEASE COMPARATOR</li>
+            <li>▶ PRIVACY-FIRST</li>
+          </ul>
+
+          <div class="cartridge-buttons">
+            <button class="pixel-btn install-btn">
+              <span class="btn-flash"></span>
+              ⬇ INSTALL NOW
+            </button>
+            <button class="pixel-btn demo-btn">
+              ▶ WATCH DEMO
+            </button>
+          </div>
+
+          <!-- Cartridge 3D Effect -->
+          <div class="cartridge-edge"></div>
+          <div class="cartridge-connector">
+            <div class="connector-line"></div>
+            <div class="connector-line"></div>
+            <div class="connector-line"></div>
+          </div>
+        </div>
+
+        <!-- Smart Food Delivery Locker Cartridge -->
+        <div class="cartridge shake-on-hover">
+          <div class="cartridge-top">
+            <div class="cartridge-label">SMART LOCKER SYSTEM</div>
+            <div class="new-badge pixel-text-tiny" style="background: var(--retro-blue);">STARTUP</div>
+          </div>
+
+          <div class="cartridge-screen">
+            <div class="screen-content">
+              <div class="game-icon pulse">🔐</div>
+              <div class="scan-line"></div>
+            </div>
+          </div>
+
+          <div class="cartridge-info">
+            <p class="pixel-text-tiny">PRODUCTION BACKEND</p>
+            <div class="power-level">
+              <span class="pixel-text-tiny">POWER:</span>
+              <div class="power-bar">
+                <div class="power-fill" data-power="90"></div>
+              </div>
+            </div>
+          </div>
+
+          <ul class="feature-list pixel-text-tiny">
+            <li>▶ EXPRESS + TYPESCRIPT</li>
+            <li>▶ REDIS + BULLMQ</li>
+            <li>▶ PREDICTIVE ANALYTICS</li>
+            <li>▶ BLUETOOTH LOCKER ACCESS</li>
+          </ul>
+
+          <div class="cartridge-buttons">
+            <button class="pixel-btn demo-btn">
+              ▶ LEARN MORE
+            </button>
+          </div>
+
+          <div class="cartridge-edge"></div>
+          <div class="cartridge-connector">
+            <div class="connector-line"></div>
+            <div class="connector-line"></div>
+            <div class="connector-line"></div>
+          </div>
+        </div>
+
+        <!-- Network Intrusion Detection Cartridge -->
+        <div class="cartridge shake-on-hover">
+          <div class="cartridge-top">
+            <div class="cartridge-label">NIDS SYSTEM</div>
+            <div class="new-badge pixel-text-tiny" style="background: var(--retro-green);">SECURITY</div>
+          </div>
+
+          <div class="cartridge-screen">
+            <div class="screen-content">
+              <div class="game-icon pulse">🛡️</div>
+              <div class="scan-line"></div>
+            </div>
+          </div>
+
+          <div class="cartridge-info">
+            <p class="pixel-text-tiny">CYBERSECURITY PROJECT</p>
+            <div class="power-level">
+              <span class="pixel-text-tiny">POWER:</span>
+              <div class="power-bar">
+                <div class="power-fill" data-power="88"></div>
+              </div>
+            </div>
+          </div>
+
+          <ul class="feature-list pixel-text-tiny">
+            <li>▶ PYTHON + SCAPY</li>
+            <li>▶ SIGNATURE DETECTION</li>
+            <li>▶ ANOMALY DETECTION</li>
+            <li>▶ KALI LINUX TESTING</li>
+          </ul>
+
+          <div class="cartridge-buttons">
+            <button class="pixel-btn demo-btn">
+              ▶ LEARN MORE
+            </button>
+          </div>
+
+          <div class="cartridge-edge"></div>
+          <div class="cartridge-connector">
+            <div class="connector-line"></div>
+            <div class="connector-line"></div>
+            <div class="connector-line"></div>
+          </div>
+        </div>
+
+        <!-- Inflation Analysis Cartridge -->
+        <div class="cartridge shake-on-hover">
+          <div class="cartridge-top">
+            <div class="cartridge-label">INFLATION ANALYSIS</div>
+            <div class="new-badge pixel-text-tiny" style="background: var(--retro-yellow); color: var(--retro-dark);">DATA SCI</div>
+          </div>
+
+          <div class="cartridge-screen">
+            <div class="screen-content">
+              <div class="game-icon pulse">📊</div>
+              <div class="scan-line"></div>
+            </div>
+          </div>
+
+          <div class="cartridge-info">
+            <p class="pixel-text-tiny">DATA SCIENCE PROJECT</p>
+            <div class="power-level">
+              <span class="pixel-text-tiny">POWER:</span>
+              <div class="power-bar">
+                <div class="power-fill" data-power="85"></div>
+              </div>
+            </div>
+          </div>
+
+          <ul class="feature-list pixel-text-tiny">
+            <li>▶ PANDAS + NUMPY</li>
+            <li>▶ TIME-SERIES ANALYSIS</li>
+            <li>▶ LINEAR REGRESSION</li>
+            <li>▶ TEAM LEADERSHIP</li>
+          </ul>
+
+          <div class="cartridge-buttons">
+            <button class="pixel-btn demo-btn">
+              ▶ LEARN MORE
+            </button>
+          </div>
+
+          <div class="cartridge-edge"></div>
+          <div class="cartridge-connector">
+            <div class="connector-line"></div>
+            <div class="connector-line"></div>
+            <div class="connector-line"></div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Skills / Skill Tree Section -->
+    <section class="powerups-section">
+      <h2 class="section-title pixel-text">
+        <span class="title-decoration">═════════════════════</span>
+        <span class="title-main">SKILL TREE UNLOCKED</span>
+        <span class="title-decoration">═════════════════════</span>
+      </h2>
+
+      <!-- Skill Tree Container -->
+      <div class="skill-tree-container">
+
+        <!-- Programming Languages Branch -->
+        <div class="skill-branch">
+          <h3 class="branch-title pixel-text-tiny">
+            <span class="branch-icon">💻</span>
+            PROGRAMMING LANGUAGES
+          </h3>
+          <div class="skill-tree-grid">
+            <div class="skill-node unlocked bounce-on-hover" data-level="advanced">
+              <div class="skill-icon">🐍</div>
+              <div class="skill-name pixel-text-tiny">PYTHON</div>
+              <div class="skill-level">⭐⭐⭐</div>
+            </div>
+            <div class="skill-node unlocked bounce-on-hover" data-level="advanced">
+              <div class="skill-icon">☕</div>
+              <div class="skill-name pixel-text-tiny">JAVA</div>
+              <div class="skill-level">⭐⭐⭐</div>
+            </div>
+            <div class="skill-node unlocked bounce-on-hover" data-level="advanced">
+              <div class="skill-icon">📜</div>
+              <div class="skill-name pixel-text-tiny">JAVASCRIPT</div>
+              <div class="skill-level">⭐⭐⭐</div>
+            </div>
+            <div class="skill-node unlocked bounce-on-hover" data-level="intermediate">
+              <div class="skill-icon">🔷</div>
+              <div class="skill-name pixel-text-tiny">TYPESCRIPT</div>
+              <div class="skill-level">⭐⭐</div>
+            </div>
+            <div class="skill-node unlocked bounce-on-hover" data-level="intermediate">
+              <div class="skill-icon">🍎</div>
+              <div class="skill-name pixel-text-tiny">SWIFT</div>
+              <div class="skill-level">⭐⭐</div>
+            </div>
+            <div class="skill-node unlocked bounce-on-hover" data-level="intermediate">
+              <div class="skill-icon">⚙️</div>
+              <div class="skill-name pixel-text-tiny">C++</div>
+              <div class="skill-level">⭐⭐</div>
+            </div>
+            <div class="skill-node unlocked bounce-on-hover" data-level="beginner">
+              <div class="skill-icon">🗄️</div>
+              <div class="skill-name pixel-text-tiny">SQL</div>
+              <div class="skill-level">⭐</div>
+            </div>
+            <div class="skill-node unlocked bounce-on-hover" data-level="beginner">
+              <div class="skill-icon">💻</div>
+              <div class="skill-name pixel-text-tiny">BASH</div>
+              <div class="skill-level">⭐</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Cloud & DevOps Branch -->
+        <div class="skill-branch">
+          <h3 class="branch-title pixel-text-tiny">
+            <span class="branch-icon">☁️</span>
+            CLOUD & DEVOPS
+          </h3>
+          <div class="skill-tree-grid">
+            <div class="skill-node unlocked bounce-on-hover" data-level="advanced">
+              <div class="skill-icon">🚀</div>
+              <div class="skill-name pixel-text-tiny">AWS</div>
+              <div class="skill-level">⭐⭐⭐</div>
+            </div>
+            <div class="skill-node unlocked bounce-on-hover" data-level="intermediate">
+              <div class="skill-icon">🐳</div>
+              <div class="skill-name pixel-text-tiny">DOCKER</div>
+              <div class="skill-level">⭐⭐</div>
+            </div>
+            <div class="skill-node unlocked bounce-on-hover" data-level="intermediate">
+              <div class="skill-icon">☸️</div>
+              <div class="skill-name pixel-text-tiny">KUBERNETES</div>
+              <div class="skill-level">⭐⭐</div>
+            </div>
+            <div class="skill-node unlocked bounce-on-hover" data-level="intermediate">
+              <div class="skill-icon">🏗️</div>
+              <div class="skill-name pixel-text-tiny">TERRAFORM</div>
+              <div class="skill-level">⭐⭐</div>
+            </div>
+            <div class="skill-node unlocked bounce-on-hover" data-level="advanced">
+              <div class="skill-icon">🐙</div>
+              <div class="skill-name pixel-text-tiny">GITHUB</div>
+              <div class="skill-level">⭐⭐⭐</div>
+            </div>
+            <div class="skill-node unlocked bounce-on-hover" data-level="intermediate">
+              <div class="skill-icon">🔄</div>
+              <div class="skill-name pixel-text-tiny">CI/CD</div>
+              <div class="skill-level">⭐⭐</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Cybersecurity Branch -->
+        <div class="skill-branch">
+          <h3 class="branch-title pixel-text-tiny">
+            <span class="branch-icon">🛡️</span>
+            CYBERSECURITY
+          </h3>
+          <div class="skill-tree-grid">
+            <div class="skill-node unlocked bounce-on-hover" data-level="advanced">
+              <div class="skill-icon">🔐</div>
+              <div class="skill-name pixel-text-tiny">PENTESTING</div>
+              <div class="skill-level">⭐⭐⭐</div>
+            </div>
+            <div class="skill-node unlocked bounce-on-hover" data-level="advanced">
+              <div class="skill-icon">🌐</div>
+              <div class="skill-name pixel-text-tiny">NIDS</div>
+              <div class="skill-level">⭐⭐⭐</div>
+            </div>
+            <div class="skill-node unlocked bounce-on-hover" data-level="intermediate">
+              <div class="skill-icon">🐉</div>
+              <div class="skill-name pixel-text-tiny">KALI LINUX</div>
+              <div class="skill-level">⭐⭐</div>
+            </div>
+            <div class="skill-node unlocked bounce-on-hover" data-level="intermediate">
+              <div class="skill-icon">🔍</div>
+              <div class="skill-name pixel-text-tiny">SCAPY</div>
+              <div class="skill-level">⭐⭐</div>
+            </div>
+            <div class="skill-node unlocked bounce-on-hover" data-level="beginner">
+              <div class="skill-icon">🏴</div>
+              <div class="skill-name pixel-text-tiny">CTF</div>
+              <div class="skill-level">⭐</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Data Science & AI Branch -->
+        <div class="skill-branch">
+          <h3 class="branch-title pixel-text-tiny">
+            <span class="branch-icon">🤖</span>
+            DATA SCIENCE & AI
+          </h3>
+          <div class="skill-tree-grid">
+            <div class="skill-node unlocked bounce-on-hover" data-level="advanced">
+              <div class="skill-icon">🐼</div>
+              <div class="skill-name pixel-text-tiny">PANDAS</div>
+              <div class="skill-level">⭐⭐⭐</div>
+            </div>
+            <div class="skill-node unlocked bounce-on-hover" data-level="advanced">
+              <div class="skill-icon">🔢</div>
+              <div class="skill-name pixel-text-tiny">NUMPY</div>
+              <div class="skill-level">⭐⭐⭐</div>
+            </div>
+            <div class="skill-node unlocked bounce-on-hover" data-level="intermediate">
+              <div class="skill-icon">🧠</div>
+              <div class="skill-name pixel-text-tiny">SCIKIT-LEARN</div>
+              <div class="skill-level">⭐⭐</div>
+            </div>
+            <div class="skill-node unlocked bounce-on-hover" data-level="intermediate">
+              <div class="skill-icon">🔥</div>
+              <div class="skill-name pixel-text-tiny">TENSORFLOW</div>
+              <div class="skill-level">⭐⭐</div>
+            </div>
+            <div class="skill-node unlocked bounce-on-hover" data-level="intermediate">
+              <div class="skill-icon">📊</div>
+              <div class="skill-name pixel-text-tiny">POWER BI</div>
+              <div class="skill-level">⭐⭐</div>
+            </div>
+            <div class="skill-node unlocked bounce-on-hover" data-level="intermediate">
+              <div class="skill-icon">🤖</div>
+              <div class="skill-name pixel-text-tiny">OPENAI</div>
+              <div class="skill-level">⭐⭐</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Web & Backend Branch -->
+        <div class="skill-branch">
+          <h3 class="branch-title pixel-text-tiny">
+            <span class="branch-icon">🌐</span>
+            WEB & BACKEND
+          </h3>
+          <div class="skill-tree-grid">
+            <div class="skill-node unlocked bounce-on-hover" data-level="advanced">
+              <div class="skill-icon">🟢</div>
+              <div class="skill-name pixel-text-tiny">NODE.JS</div>
+              <div class="skill-level">⭐⭐⭐</div>
+            </div>
+            <div class="skill-node unlocked bounce-on-hover" data-level="advanced">
+              <div class="skill-icon">⚡</div>
+              <div class="skill-name pixel-text-tiny">EXPRESS</div>
+              <div class="skill-level">⭐⭐⭐</div>
+            </div>
+            <div class="skill-node unlocked bounce-on-hover" data-level="intermediate">
+              <div class="skill-icon">🔴</div>
+              <div class="skill-name pixel-text-tiny">REDIS</div>
+              <div class="skill-level">⭐⭐</div>
+            </div>
+            <div class="skill-node unlocked bounce-on-hover" data-level="intermediate">
+              <div class="skill-icon">📦</div>
+              <div class="skill-name pixel-text-tiny">KNEX</div>
+              <div class="skill-level">⭐⭐</div>
+            </div>
+            <div class="skill-node unlocked bounce-on-hover" data-level="intermediate">
+              <div class="skill-icon">🐂</div>
+              <div class="skill-name pixel-text-tiny">BULLMQ</div>
+              <div class="skill-level">⭐⭐</div>
+            </div>
+            <div class="skill-node unlocked bounce-on-hover" data-level="beginner">
+              <div class="skill-icon">🌈</div>
+              <div class="skill-name pixel-text-tiny">HTML/CSS</div>
+              <div class="skill-level">⭐</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Certifications Branch -->
+        <div class="skill-branch special">
+          <h3 class="branch-title pixel-text-tiny">
+            <span class="branch-icon">🏆</span>
+            CERTIFICATIONS EARNED
+          </h3>
+          <div class="cert-grid">
+            <div class="cert-badge earned pulse">
+              <div class="cert-icon">🤖</div>
+              <div class="cert-name pixel-text-tiny">AWS AI PRACTITIONER</div>
+            </div>
+            <div class="cert-badge earned pulse">
+              <div class="cert-icon">☁️</div>
+              <div class="cert-name pixel-text-tiny">AWS CLOUD PRACTITIONER</div>
+            </div>
+            <div class="cert-badge earned pulse">
+              <div class="cert-icon">🔧</div>
+              <div class="cert-name pixel-text-tiny">COMPTIA A+</div>
+            </div>
+            <div class="cert-badge earned pulse">
+              <div class="cert-icon">🔒</div>
+              <div class="cert-name pixel-text-tiny">COMPTIA SECURITY+</div>
+            </div>
+            <div class="cert-badge in-progress">
+              <div class="cert-icon">🏗️</div>
+              <div class="cert-name pixel-text-tiny">AWS SOLUTIONS ARCHITECT</div>
+              <div class="progress-badge pixel-text-tiny blink">IN PROGRESS</div>
+            </div>
+            <div class="cert-badge in-progress">
+              <div class="cert-icon">🎩</div>
+              <div class="cert-name pixel-text-tiny">CERTIFIED ETHICAL HACKER</div>
+              <div class="progress-badge pixel-text-tiny blink">IN PROGRESS</div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Contact / Game Over Section -->
+    <section class="contact-section">
+      <div class="game-over-screen pixel-box">
+        <h2 class="pixel-text game-over-text blink">CONTINUE?</h2>
+        <p class="pixel-text-sm">INSERT COIN TO CONNECT</p>
+
+        <div class="contact-grid">
+          <a href="https://github.com/saivoru777-ship-it" target="_blank" class="pixel-btn contact-btn">
+            <span>🐙</span> GITHUB
+          </a>
+          <a href="https://www.linkedin.com/in/pretham-voruganti-79a52a251" target="_blank" class="pixel-btn contact-btn">
+            <span>💼</span> LINKEDIN
+          </a>
+          <a href="mailto:Prethamvoruganti@gmail.com" class="pixel-btn contact-btn">
+            <span>📧</span> EMAIL
+          </a>
+        </div>
+
+        <p class="pixel-text-tiny credit-text">
+          PRESS START TO CONTINUE
+        </p>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="retro-footer">
+      <div class="footer-content pixel-text-tiny">
+        <p>© 2025 PRETHAM.DEV</p>
+        <p>BUILT WITH ♥ AND NOSTALGIA</p>
+        <p class="konami-code blink">↑ ↑ ↓ ↓ ← → ← → B A</p>
+      </div>
+    </footer>
+
+  </div>
+
+  <!-- Modal for Demo -->
+  <div class="modal" id="demo-modal">
+    <div class="modal-content pixel-box">
+      <button class="close-btn pixel-text">×</button>
+      <h3 class="pixel-text modal-title">TENANT LEASE AI</h3>
+      <div class="demo-screen">
+        <div class="demo-placeholder pixel-text-sm">
+          <p>🎬 DEMO VIDEO</p>
+          <p class="blink">LOADING...</p>
+          <p class="pixel-text-tiny">(COMING SOON)</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="8bit-script.js"></script>
+</body>
+</html>
