@@ -195,11 +195,20 @@ function initSmoothScrolling() {
 function initInstallButton() {
   const installButtons = document.querySelectorAll('.install-btn');
 
-  installButtons.forEach(btn => {
+  installButtons.forEach((btn, index) => {
     btn.addEventListener('click', () => {
-      // Replace with your actual Chrome Web Store URL
-      const chromeStoreUrl = 'https://chrome.google.com/webstore';
-      window.open(chromeStoreUrl, '_blank');
+      // Different links for different projects
+      let targetUrl;
+
+      if (index === 0) {
+        // Tenant Lease AI - Chrome Web Store
+        targetUrl = 'https://chromewebstore.google.com/detail/lmpdooiklheoifbeipdepajjonidajfl';
+      } else {
+        // Other projects - default to Chrome Web Store or GitHub
+        targetUrl = 'https://github.com/yourusername';
+      }
+
+      window.open(targetUrl, '_blank');
       playSound('powerup');
     });
   });
