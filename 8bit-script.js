@@ -92,8 +92,9 @@ class Modal {
   }
 
   init() {
-    // Open modal on demo button click
+    // Open modal on demo button click — skip anchor tags (they navigate via href)
     this.demoButtons.forEach(btn => {
+      if (btn.tagName === 'A') return;
       btn.addEventListener('click', () => this.open());
     });
 
@@ -204,8 +205,7 @@ function initInstallButton() {
         // Tenant Lease AI - Chrome Web Store
         targetUrl = 'https://chromewebstore.google.com/detail/lmpdooiklheoifbeipdepajjonidajfl';
       } else {
-        // Other projects - default to Chrome Web Store or GitHub
-        targetUrl = 'https://github.com/yourusername';
+        targetUrl = 'https://github.com/saivoru777-ship-it';
       }
 
       window.open(targetUrl, '_blank');
