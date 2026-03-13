@@ -460,6 +460,11 @@ img {
   color: #A855F7;
 }
 
+.project-badge.neuroscience {
+  background: rgba(6, 182, 212, 0.15);
+  color: #06B6D4;
+}
+
 .project-desc {
   font-size: 0.9375rem;
   line-height: 1.6;
