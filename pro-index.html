@@ -1,580 +1,1021 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Pretham Voruganti - Software Engineer & AI Developer</title>
-  <meta name="description" content="Software Engineer specializing in AI systems, cybersecurity, and scalable backend platforms.">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="pro-style.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Pretham Voruganti — Software Engineer, AI &amp; Cybersecurity</title>
+<meta name="description" content="Software engineer building backend platforms, security tooling, and applied ML. M.S. Applied Machine Learning at Maryland; B.S. Cybersecurity, Purdue. Engineer intern at Mastercard.">
+<meta name="author" content="Pretham Voruganti">
+<meta name="theme-color" content="#14100F">
+<link rel="canonical" href="https://saivoru777-ship-it.github.io/pretham.dev/pro-index.html">
+
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Pretham Voruganti">
+<meta property="og:title" content="Pretham Voruganti — Software Engineer, AI &amp; Cybersecurity">
+<meta property="og:description" content="I build systems that hold up under load. Backend platforms, security tooling, applied ML — plus research running one statistical method from protein nanoclusters to cosmic structure.">
+<meta property="og:url" content="https://saivoru777-ship-it.github.io/pretham.dev/pro-index.html">
+<meta property="og:image" content="https://saivoru777-ship-it.github.io/pretham.dev/og-image.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Pretham Voruganti — software engineer, AI and security">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Pretham Voruganti — Software Engineer, AI &amp; Cybersecurity">
+<meta name="twitter:description" content="I build systems that hold up under load.">
+<meta name="twitter:image" content="https://saivoru777-ship-it.github.io/pretham.dev/og-image.png">
+
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="alternate icon" href="favicon.ico" sizes="48x48">
+<link rel="icon" href="favicon-32.png" sizes="32x32" type="image/png">
+<link rel="icon" href="favicon-16.png" sizes="16x16" type="image/png">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"Person","name":"Pretham Voruganti",
+"url":"https://saivoru777-ship-it.github.io/pretham.dev/",
+"jobTitle":"Software Engineer","email":"mailto:Prethamvoruganti@gmail.com",
+"address":{"@type":"PostalAddress","addressLocality":"Falls Church","addressRegion":"VA","addressCountry":"US"},
+"sameAs":["https://github.com/saivoru777-ship-it","https://www.linkedin.com/in/pretham-voruganti-79a52a251"],
+"alumniOf":[{"@type":"CollegeOrUniversity","name":"University of Maryland, College Park"},
+{"@type":"CollegeOrUniversity","name":"Purdue University"}]}
+</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600;9..144,700&family=IBM+Plex+Mono:wght@400;500;600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --ground:#14100F;--surface:#1C1715;--sunk:#100C0B;
+  --ink:#F5EFE9;--ink-soft:#B8ABA2;--ink-dim:#857A72;
+  --rule:#2E2724;--rule-soft:#221D1B;
+  --accent:#FF6A3D;--accent-soft:#FF9A78;--accent-dim:#7A3620;
+  --second:#7FB0A3;--glow:rgba(255,106,61,.16);
+}
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;-webkit-font-smoothing:antialiased}
+body{background:var(--ground);color:var(--ink);font-family:Inter,system-ui,sans-serif;
+  font-size:16px;line-height:1.65;overflow-x:hidden;transition:background .5s,color .5s}
+a{color:inherit;text-decoration:none}
+body::before{content:'';position:fixed;inset:0;pointer-events:none;z-index:1;opacity:.32;
+  background-image:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='200' height='200'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='.85' numOctaves='3'/></filter><rect width='200' height='200' filter='url(%23n)' opacity='.42'/></svg>");
+  mix-blend-mode:overlay}
+.wrap{max-width:1080px;margin:0 auto;padding:0 32px}
+.pl{padding-left:42px}
+@media(max-width:960px){.pl{padding-left:0}}
+
+/* ---------- helix rail ---------- */
+.helix{position:fixed;left:0;top:0;width:88px;height:100vh;z-index:5;pointer-events:none}
+.helix svg{width:100%;height:100%;display:block;overflow:visible}
+.hx-strand{fill:none;stroke:var(--rule);stroke-width:1.1}
+.hx-rung{stroke:var(--rule);stroke-width:.9}
+.hx-lit .hx-strand{stroke:var(--accent);stroke-width:1.5;filter:drop-shadow(0 0 5px var(--glow))}
+.hx-lit .hx-rung{stroke:var(--accent-soft)}
+.hx-mark{position:absolute;left:52px;transform:translateY(-50%);display:flex;align-items:center;gap:9px;
+  font-family:'IBM Plex Mono',monospace;font-size:9.5px;letter-spacing:.12em;color:var(--ink-dim);
+  transition:color .4s,opacity .4s;opacity:.55;white-space:nowrap}
+.hx-mark i{width:5px;height:5px;border-radius:50%;background:var(--rule);display:block;
+  transition:background .4s,transform .4s,box-shadow .4s}
+.hx-mark.on{color:var(--accent);opacity:1}
+.hx-mark.on i{background:var(--accent);transform:scale(1.7);box-shadow:0 0 10px var(--glow)}
+@media(max-width:1100px){.helix{display:none}}
+
+/* ---------- nav ---------- */
+.nav{position:fixed;top:0;left:0;right:0;z-index:40;display:flex;align-items:center;
+  justify-content:space-between;padding:20px 32px 20px 110px;font-family:'IBM Plex Mono',monospace;
+  font-size:12px;letter-spacing:.08em;text-transform:uppercase;color:var(--ink-dim);
+  border-bottom:1px solid transparent;transition:background .4s,border-color .4s}
+.nav.stuck{background:color-mix(in srgb,var(--ground) 82%,transparent);backdrop-filter:blur(14px);
+  border-bottom-color:var(--rule-soft)}
+.nav-name{color:var(--ink);font-weight:600;letter-spacing:.1em}
+.nav-links{display:flex;gap:24px}
+.nav-links a{position:relative;padding:2px 0;transition:color .25s}
+.nav-links a::after{content:'';position:absolute;left:0;right:0;bottom:-2px;height:1px;
+  background:var(--accent);transform:scaleX(0);transform-origin:right;
+  transition:transform .35s cubic-bezier(.2,.7,.3,1)}
+.nav-links a:hover{color:var(--ink)}
+.nav-links a:hover::after{transform:scaleX(1);transform-origin:left}
+@media(max-width:1100px){.nav{padding-left:32px}}
+@media(max-width:760px){.nav-links{display:none}}
+
+/* ---------- motion primitives ---------- */
+.rise{opacity:0;transform:translateY(34px);transition:opacity .85s ease,transform .95s cubic-bezier(.16,1,.3,1)}
+.slide-l{opacity:0;transform:translateX(-52px);transition:opacity .85s ease,transform .95s cubic-bezier(.16,1,.3,1)}
+.slide-r{opacity:0;transform:translateX(52px);transition:opacity .85s ease,transform .95s cubic-bezier(.16,1,.3,1)}
+.rise.in,.slide-l.in,.slide-r.in{opacity:1;transform:none}
+.d1{transition-delay:.09s}.d2{transition-delay:.18s}.d3{transition-delay:.27s}.d4{transition-delay:.36s}
+
+/* ---------- hero ---------- */
+.hero{min-height:100svh;display:flex;align-items:center;padding:120px 0 90px;position:relative}
+.eyebrow{font-family:'IBM Plex Mono',monospace;font-size:11.5px;letter-spacing:.22em;
+  text-transform:uppercase;color:var(--accent);margin-bottom:34px;display:flex;align-items:center;gap:14px}
+.eyebrow::before{content:'';width:var(--w,0px);height:1px;background:var(--accent);
+  transition:width 1s cubic-bezier(.2,.7,.3,1) .3s}
+.loaded .eyebrow{--w:56px}
+h1.display{font-family:Fraunces,Georgia,serif;font-weight:600;font-size:clamp(42px,7.2vw,86px);
+  line-height:1.02;letter-spacing:-.025em;max-width:16ch;margin-bottom:34px}
+h1.display em{font-style:normal;color:var(--accent)}
+.reveal-line{display:block;overflow:hidden}
+.reveal-line>span{display:block;transform:translateY(105%);opacity:0;
+  transition:transform 1s cubic-bezier(.16,1,.3,1),opacity .8s ease}
+.loaded .reveal-line>span{transform:translateY(0);opacity:1}
+.loaded .reveal-line:nth-child(1)>span{transition-delay:.10s}
+.loaded .reveal-line:nth-child(2)>span{transition-delay:.20s}
+.loaded .reveal-line:nth-child(3)>span{transition-delay:.30s}
+.lede{font-size:clamp(16px,1.6vw,18.5px);line-height:1.75;color:var(--ink-soft);max-width:54ch;
+  margin-bottom:40px;opacity:0;transform:translateY(18px);
+  transition:opacity .9s ease .55s,transform .9s cubic-bezier(.16,1,.3,1) .55s}
+.loaded .lede{opacity:1;transform:none}
+.lede strong{color:var(--ink);font-weight:500}
+.hero-meta{display:flex;flex-wrap:wrap;border-top:1px solid var(--rule);opacity:0;transform:translateY(18px);
+  transition:opacity .9s ease .75s,transform .9s cubic-bezier(.16,1,.3,1) .75s}
+.loaded .hero-meta{opacity:1;transform:none}
+.meta-cell{padding:20px 30px 4px 0;margin-right:30px;border-right:1px solid var(--rule)}
+.meta-cell:last-child{border-right:0}
+.meta-k{font-family:'IBM Plex Mono',monospace;font-size:10.5px;letter-spacing:.16em;
+  text-transform:uppercase;color:var(--ink-dim);margin-bottom:7px}
+.meta-v{font-size:15px;line-height:1.45}
+.meta-v span{color:var(--ink-dim)}
+@media(max-width:640px){.meta-cell{border-right:0;padding-right:0;margin-right:0;width:100%}}
+.scroll-hint{position:absolute;bottom:38px;font-family:'IBM Plex Mono',monospace;font-size:10.5px;
+  letter-spacing:.18em;text-transform:uppercase;color:var(--ink-dim);display:flex;align-items:center;
+  gap:10px;opacity:0;transition:opacity 1s ease 1.2s}
+.loaded .scroll-hint{opacity:1}
+.scroll-hint i{width:1px;height:26px;background:linear-gradient(var(--accent),transparent);
+  animation:drip 2.1s ease-in-out infinite}
+@keyframes drip{0%,100%{transform:scaleY(.35);opacity:.5}50%{transform:scaleY(1);opacity:1}}
+
+/* ---------- section furniture ---------- */
+section{padding:110px 0;position:relative}
+.sec-head{display:flex;align-items:baseline;gap:18px;margin-bottom:14px}
+.sec-num{font-family:'IBM Plex Mono',monospace;font-size:11px;letter-spacing:.14em;color:var(--accent)}
+.sec-title{font-family:Fraunces,Georgia,serif;font-weight:600;font-size:clamp(27px,3.6vw,42px);
+  letter-spacing:-.02em;line-height:1.1}
+.sec-intro{max-width:62ch;color:var(--ink-soft);font-size:16.5px;line-height:1.75;margin-bottom:64px}
+
+/* ---------- about / progressive reveal ---------- */
+.about{border-block:1px solid var(--rule);background:var(--sunk)}
+.about-lines{display:flex;flex-direction:column;gap:0}
+.al{padding:46px 0;border-bottom:1px solid var(--rule-soft);display:grid;
+  grid-template-columns:132px 1fr;gap:30px;align-items:start}
+.al:last-child{border-bottom:0}
+.al-k{font-family:'IBM Plex Mono',monospace;font-size:10.5px;letter-spacing:.16em;
+  text-transform:uppercase;color:var(--accent);padding-top:8px}
+.al-v{font-family:Fraunces,Georgia,serif;font-size:clamp(20px,2.5vw,29px);line-height:1.45;
+  font-weight:400;letter-spacing:-.015em;max-width:26ch}
+.al-v b{font-weight:600;color:var(--accent)}
+.al-sub{font-family:Inter,sans-serif;font-size:15.5px;line-height:1.75;color:var(--ink-soft);
+  margin-top:14px;max-width:56ch}
+@media(max-width:720px){.al{grid-template-columns:1fr;gap:12px}}
+
+/* ---------- work entries ---------- */
+.entry{display:grid;grid-template-columns:76px 1fr 300px;gap:34px;padding:46px 0;
+  border-top:1px solid var(--rule);align-items:start;position:relative}
+.entry:last-of-type{border-bottom:1px solid var(--rule)}
+.entry::before{content:'';position:absolute;left:0;right:0;top:0;height:1px;background:var(--accent);
+  transform:scaleX(0);transform-origin:left;transition:transform .7s cubic-bezier(.2,.7,.3,1)}
+.entry:hover::before{transform:scaleX(1)}
+.entry-idx{font-family:'IBM Plex Mono',monospace;font-size:12px;color:var(--ink-dim);
+  padding-top:6px;letter-spacing:.1em}
+.entry:hover .entry-idx{color:var(--accent)}
+.entry-title{font-family:Fraunces,Georgia,serif;font-weight:600;font-size:26px;letter-spacing:-.015em;
+  margin-bottom:6px;display:flex;align-items:center;gap:12px}
+.entry-title .arrow{font-family:'IBM Plex Mono',monospace;font-size:16px;color:var(--accent);
+  opacity:0;transform:translateX(-8px);transition:.35s}
+.entry:hover .entry-title .arrow{opacity:1;transform:none}
+.entry-status{font-family:'IBM Plex Mono',monospace;font-size:10.5px;letter-spacing:.14em;
+  text-transform:uppercase;color:var(--ink-dim);margin-bottom:16px}
+.entry-status b{color:var(--accent);font-weight:500}
+.entry-desc{color:var(--ink-soft);font-size:15.5px;line-height:1.75;max-width:56ch}
+.entry-tags{display:flex;flex-wrap:wrap;gap:7px;margin-top:18px;font-family:'IBM Plex Mono',monospace;font-size:11px}
+.entry-tags span{color:var(--ink-dim);border:1px solid var(--rule);padding:3px 9px;border-radius:3px}
+.entry-links{display:flex;gap:16px;margin-top:18px;font-family:'IBM Plex Mono',monospace;font-size:11px;
+  letter-spacing:.1em;text-transform:uppercase}
+.entry-links a{color:var(--accent);border-bottom:1px solid transparent;transition:.3s;padding-bottom:2px}
+.entry-links a:hover{border-bottom-color:var(--accent)}
+.entry-fig{border:1px solid var(--rule);border-radius:6px;padding:16px;background:var(--sunk)}
+.entry-fig figcaption{font-family:'IBM Plex Mono',monospace;font-size:9.5px;letter-spacing:.12em;
+  text-transform:uppercase;color:var(--ink-dim);margin-top:12px}
+@media(max-width:900px){.entry{grid-template-columns:44px 1fr;gap:20px}.entry-fig{grid-column:1/-1}}
+.schem{width:100%;height:auto;display:block;overflow:visible}
+.schem .node{fill:none;stroke:var(--ink-dim);stroke-width:1.15}
+.schem .flow{fill:none;stroke:var(--accent);stroke-width:1.15;stroke-dasharray:var(--len,300);
+  stroke-dashoffset:var(--len,300);transition:stroke-dashoffset 1.5s cubic-bezier(.5,0,.2,1) .25s}
+.in .schem .flow{stroke-dashoffset:0}
+.schem text{font-family:'IBM Plex Mono',monospace;font-size:7.4px;fill:var(--ink-soft);letter-spacing:.04em}
+.schem .anno{fill:var(--accent);font-size:6.6px}
+.schem .dash{stroke:var(--rule);stroke-width:1;stroke-dasharray:2 3}
+</style>
 </head>
+<style>
+/* ---------- compact grid (ventures) ---------- */
+.mini-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:0;
+  border-top:1px solid var(--rule)}
+.mini{padding:34px 30px 34px 0;border-bottom:1px solid var(--rule);border-right:1px solid var(--rule);
+  position:relative;transition:background .45s}
+.mini:hover{background:color-mix(in srgb,var(--accent) 4%,transparent)}
+.mini{padding-left:30px}
+.mini::after{content:'';position:absolute;left:0;top:0;bottom:0;width:2px;background:var(--accent);
+  transform:scaleY(0);transform-origin:top;transition:transform .5s cubic-bezier(.2,.7,.3,1)}
+.mini:hover::after{transform:scaleY(1)}
+.mini-k{font-family:'IBM Plex Mono',monospace;font-size:10px;letter-spacing:.16em;text-transform:uppercase;
+  color:var(--accent);margin-bottom:12px;display:flex;justify-content:space-between}
+.mini-k em{font-style:normal;color:var(--ink-dim)}
+.mini-t{font-family:Fraunces,Georgia,serif;font-weight:600;font-size:21px;margin-bottom:10px;letter-spacing:-.01em}
+.mini-d{color:var(--ink-soft);font-size:14.5px;line-height:1.72}
+.mini-tags{display:flex;flex-wrap:wrap;gap:6px;margin-top:16px;font-family:'IBM Plex Mono',monospace;font-size:10px}
+.mini-tags span{color:var(--ink-dim);border:1px solid var(--rule);padding:2px 7px;border-radius:3px}
+.mini-links{margin-top:14px;font-family:'IBM Plex Mono',monospace;font-size:10.5px;letter-spacing:.1em;
+  text-transform:uppercase;display:flex;gap:14px}
+.mini-links a{color:var(--accent);border-bottom:1px solid transparent;transition:.3s;padding-bottom:2px}
+.mini-links a:hover{border-bottom-color:var(--accent)}
+
+/* ---------- scale axis ---------- */
+.scale-sec{background:var(--sunk);border-block:1px solid var(--rule)}
+.scale-lay{display:grid;grid-template-columns:190px 1fr;gap:56px}
+@media(max-width:900px){.scale-lay{grid-template-columns:1fr;gap:0}}
+.axis-col{position:sticky;top:0;height:100svh;display:flex;align-items:center}
+@media(max-width:900px){.axis-col{display:none}}
+.axis{position:relative;width:100%;height:58vh}
+.axis-line{position:absolute;left:52px;top:0;bottom:0;width:1px;background:var(--rule)}
+.axis-line::after{content:'';position:absolute;left:-1px;top:0;width:3px;height:var(--sp,0%);
+  background:linear-gradient(var(--accent),var(--accent-soft));box-shadow:0 0 12px var(--glow);
+  transition:height .35s cubic-bezier(.2,.7,.3,1)}
+.tick{position:absolute;left:0;width:100%;display:flex;align-items:center;transform:translateY(-50%)}
+.tick-exp{width:52px;text-align:right;padding-right:11px;font-family:'IBM Plex Mono',monospace;
+  font-size:10px;color:var(--ink-dim);transition:color .35s}
+.tick-dot{width:7px;height:7px;border-radius:50%;background:var(--rule);margin-left:-3px;
+  border:1px solid var(--sunk);transition:background .35s,transform .35s,box-shadow .35s}
+.tick-lbl{padding-left:13px;font-family:'IBM Plex Mono',monospace;font-size:10.5px;letter-spacing:.08em;
+  color:var(--ink-dim);transition:color .35s}
+.tick.on .tick-exp,.tick.on .tick-lbl{color:var(--accent)}
+.tick.on .tick-dot{background:var(--accent);transform:scale(1.5);box-shadow:0 0 12px var(--glow)}
+.study{padding:62px 0;border-bottom:1px solid var(--rule-soft);opacity:.4;transition:opacity .55s}
+.study.on{opacity:1}
+.study-scale{font-family:'IBM Plex Mono',monospace;font-size:10.5px;letter-spacing:.16em;
+  text-transform:uppercase;color:var(--accent);margin-bottom:12px}
+.study-title{font-family:Fraunces,Georgia,serif;font-weight:600;font-size:24px;letter-spacing:-.015em;margin-bottom:12px}
+.study-desc{color:var(--ink-soft);font-size:15.5px;line-height:1.75;max-width:58ch}
+.study-num{display:flex;gap:34px;margin-top:22px;flex-wrap:wrap;font-family:'IBM Plex Mono',monospace}
+.study-num div{display:flex;flex-direction:column;gap:3px}
+.study-num b{font-size:19px;color:var(--ink);font-weight:500;letter-spacing:-.01em}
+.study-num i{font-style:normal;font-size:10px;letter-spacing:.12em;text-transform:uppercase;color:var(--ink-dim)}
+.study-links{margin-top:16px;font-family:'IBM Plex Mono',monospace;font-size:10.5px;letter-spacing:.1em;
+  text-transform:uppercase;display:flex;gap:16px}
+.study-links a{color:var(--accent);border-bottom:1px solid transparent;transition:.3s;padding-bottom:2px}
+.study-links a:hover{border-bottom-color:var(--accent)}
+
+/* ---------- experience ---------- */
+.role{display:grid;grid-template-columns:1fr 250px;gap:44px;padding:52px 0;
+  border-top:1px solid var(--rule);position:relative}
+.role:last-of-type{border-bottom:1px solid var(--rule)}
+.role-h{display:flex;align-items:baseline;justify-content:space-between;gap:20px;flex-wrap:wrap;margin-bottom:6px}
+.role-t{font-family:Fraunces,Georgia,serif;font-weight:600;font-size:25px;letter-spacing:-.015em}
+.role-d{font-family:'IBM Plex Mono',monospace;font-size:11px;letter-spacing:.1em;color:var(--accent);white-space:nowrap}
+.role-o{font-family:'IBM Plex Mono',monospace;font-size:11.5px;letter-spacing:.12em;text-transform:uppercase;
+  color:var(--ink-dim);margin-bottom:22px}
+.role-l{list-style:none;display:flex;flex-direction:column;gap:13px}
+.role-l li{position:relative;padding-left:22px;color:var(--ink-soft);font-size:15.5px;line-height:1.75;max-width:60ch}
+.role-l li::before{content:'';position:absolute;left:0;top:12px;width:9px;height:1px;background:var(--accent);opacity:.75}
+.role-side{border-left:1px solid var(--rule);padding-left:26px}
+.role-side .meta-k{margin-bottom:10px}
+.spark{width:100%;height:auto;display:block;overflow:visible;margin-bottom:16px}
+.spark path{fill:none;stroke:var(--accent);stroke-width:1.3;stroke-dasharray:var(--len,300);
+  stroke-dashoffset:var(--len,300);transition:stroke-dashoffset 1.7s cubic-bezier(.5,0,.2,1) .3s}
+.spark .base{stroke:var(--rule);stroke-width:1;stroke-dasharray:none;stroke-dashoffset:0}
+.in .spark path{stroke-dashoffset:0}
+.role-stack{display:flex;flex-wrap:wrap;gap:6px;font-family:'IBM Plex Mono',monospace;font-size:10px}
+.role-stack span{color:var(--ink-dim);border:1px solid var(--rule);padding:2px 7px;border-radius:3px}
+@media(max-width:900px){.role{grid-template-columns:1fr;gap:26px}
+  .role-side{border-left:0;border-top:1px solid var(--rule);padding-left:0;padding-top:22px}}
+
+/* ---------- education ---------- */
+.edu{display:grid;grid-template-columns:1fr 1fr;gap:0;border-top:1px solid var(--rule)}
+@media(max-width:820px){.edu{grid-template-columns:1fr}}
+.edu-c{padding:42px 34px 42px 0;border-bottom:1px solid var(--rule);border-right:1px solid var(--rule)}
+.edu-c:last-child{border-right:0}
+.edu-c{padding-left:34px}
+.edu-st{font-family:'IBM Plex Mono',monospace;font-size:10px;letter-spacing:.16em;text-transform:uppercase;
+  color:var(--accent);margin-bottom:16px;display:flex;align-items:center;gap:9px}
+.edu-st i{width:6px;height:6px;border-radius:50%;background:var(--accent);display:block}
+.edu-st.done{color:var(--ink-dim)}
+.edu-st.done i{background:var(--ink-dim)}
+.edu-deg{font-family:Fraunces,Georgia,serif;font-weight:600;font-size:24px;letter-spacing:-.015em;margin-bottom:8px}
+.edu-sch{font-size:15.5px;color:var(--ink-soft);margin-bottom:6px}
+.edu-m{font-family:'IBM Plex Mono',monospace;font-size:11px;color:var(--ink-dim);letter-spacing:.06em}
+.prog{height:2px;background:var(--rule);margin:22px 0 10px;position:relative;overflow:hidden}
+.prog i{position:absolute;left:0;top:0;bottom:0;width:0;background:var(--accent);
+  transition:width 1.6s cubic-bezier(.2,.7,.3,1) .3s}
+.in .prog i{width:var(--p,0%)}
+.prog-l{font-family:'IBM Plex Mono',monospace;font-size:10px;color:var(--ink-dim);
+  display:flex;justify-content:space-between;letter-spacing:.08em}
+.edu-cw{margin-top:22px;padding-top:20px;border-top:1px solid var(--rule-soft);
+  font-size:14px;line-height:1.8;color:var(--ink-soft)}
+.edu-cw em{font-style:normal;font-family:'IBM Plex Mono',monospace;font-size:10px;letter-spacing:.14em;
+  text-transform:uppercase;color:var(--ink-dim);display:block;margin-bottom:8px}
+.certs{display:flex;flex-wrap:wrap;gap:0;border-top:1px solid var(--rule);margin-top:0}
+.cert{padding:24px 28px 24px 0;border-bottom:1px solid var(--rule);flex:1 1 200px;
+  display:flex;align-items:baseline;gap:12px}
+.cert b{font-weight:500;font-size:15px}
+.cert em{font-style:normal;font-family:'IBM Plex Mono',monospace;font-size:10px;color:var(--ink-dim);letter-spacing:.1em}
+
+/* ---------- skills w/ evidence ---------- */
+.sk{display:grid;grid-template-columns:210px 1fr 132px;gap:30px;padding:32px 0;
+  border-top:1px solid var(--rule);align-items:start}
+.sk:last-of-type{border-bottom:1px solid var(--rule)}
+.sk-k{font-family:'IBM Plex Mono',monospace;font-size:11px;letter-spacing:.14em;text-transform:uppercase;
+  color:var(--ink);padding-top:3px}
+.sk-v{display:flex;flex-wrap:wrap;gap:8px}
+.sk-v span{font-family:'IBM Plex Mono',monospace;font-size:11.5px;color:var(--ink-soft);
+  border:1px solid var(--rule);padding:4px 10px;border-radius:3px;transition:.3s}
+.sk:hover .sk-v span{border-color:var(--rule);color:var(--ink)}
+.sk-e{font-family:'IBM Plex Mono',monospace;font-size:10px;letter-spacing:.1em;color:var(--ink-dim);
+  text-align:right;padding-top:6px;line-height:1.9}
+.sk-e b{color:var(--accent);font-weight:500}
+@media(max-width:820px){.sk{grid-template-columns:1fr;gap:14px}.sk-e{text-align:left}}
+
+/* ---------- contact ---------- */
+.contact{border-top:1px solid var(--rule);background:var(--sunk)}
+.cta{font-family:Fraunces,Georgia,serif;font-weight:600;font-size:clamp(30px,5vw,58px);
+  line-height:1.1;letter-spacing:-.025em;max-width:15ch;margin-bottom:14px}
+.cta em{font-style:normal;color:var(--accent)}
+.cta-sub{color:var(--ink-soft);font-size:17px;max-width:50ch;margin-bottom:52px}
+.links{border-top:1px solid var(--rule)}
+.lk{display:flex;align-items:center;justify-content:space-between;gap:20px;padding:26px 0;
+  border-bottom:1px solid var(--rule);position:relative;overflow:hidden}
+.lk::before{content:'';position:absolute;left:0;top:0;bottom:0;width:0;
+  background:color-mix(in srgb,var(--accent) 8%,transparent);transition:width .5s cubic-bezier(.2,.7,.3,1)}
+.lk:hover::before{width:100%}
+.lk-n{font-family:Fraunces,Georgia,serif;font-size:clamp(20px,2.6vw,29px);font-weight:600;
+  letter-spacing:-.015em;position:relative;transition:transform .45s cubic-bezier(.2,.7,.3,1);padding-left:0}
+.lk:hover .lk-n{transform:translateX(16px);color:var(--accent)}
+.lk-v{font-family:'IBM Plex Mono',monospace;font-size:11.5px;color:var(--ink-dim);letter-spacing:.08em;
+  position:relative;transition:color .35s;text-align:right}
+.lk:hover .lk-v{color:var(--ink-soft)}
+.foot{padding:52px 0 80px;font-family:'IBM Plex Mono',monospace;font-size:11px;letter-spacing:.1em;
+  text-transform:uppercase;color:var(--ink-dim);display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap}
+@media (prefers-reduced-motion:reduce){
+  *,*::before,*::after{animation:none!important;transition:none!important}
+  .reveal-line>span,.lede,.hero-meta,.rise,.slide-l,.slide-r{opacity:1!important;transform:none!important}
+  .schem .flow,.spark path{stroke-dashoffset:0!important}
+  .prog i{width:var(--p,0%)!important}
+}
+
+/* ---------- section differentiation ---------- */
+section.tone{background:var(--sunk)}
+section+section{border-top:1px solid var(--rule)}
+.sec-head{position:relative;isolation:isolate}
+.sec-head>*{position:relative;z-index:1}
+.sec-head::before{
+  content:attr(data-n);position:absolute;left:-8px;top:50%;
+  transform:translateY(-52%);z-index:0;pointer-events:none;
+  font-family:Fraunces,Georgia,serif;font-weight:700;
+  font-size:clamp(90px,14vw,190px);line-height:.8;letter-spacing:-.04em;
+  color:var(--ink);opacity:.045;
+}
+@media(max-width:700px){.sec-head::before{font-size:96px;left:-4px}}
+
+/* ---------- drawers ---------- */
+.more-wrap{display:flex;justify-content:center;margin-top:56px}
+.more-btn{
+  font-family:'IBM Plex Mono',monospace;font-size:11px;letter-spacing:.16em;text-transform:uppercase;
+  color:var(--ink-soft);background:none;cursor:pointer;
+  border:1px solid var(--rule);border-radius:999px;padding:14px 28px;
+  display:inline-flex;align-items:center;gap:14px;transition:.35s}
+.more-btn:hover{border-color:var(--accent);color:var(--accent)}
+.more-ico{width:9px;height:9px;border-right:1.4px solid currentColor;border-bottom:1.4px solid currentColor;
+  transform:rotate(45deg) translate(-2px,-2px);transition:transform .4s cubic-bezier(.2,.7,.3,1)}
+.more-btn[aria-expanded="true"] .more-ico{transform:rotate(-135deg) translate(-2px,-2px)}
+.more-panel[hidden]{display:none}
+.more-panel{animation:drop .7s cubic-bezier(.16,1,.3,1)}
+@keyframes drop{from{opacity:0;transform:translateY(-16px)}to{opacity:1;transform:none}}
+
+/* ---------- research repo expanders ---------- */
+.repo-wrap{margin-top:20px}
+.repo-btn{font-family:'IBM Plex Mono',monospace;font-size:10.5px;letter-spacing:.12em;
+  text-transform:uppercase;color:var(--accent);background:none;border:0;cursor:pointer;
+  padding:6px 0;display:inline-flex;align-items:center;gap:10px;transition:opacity .3s}
+.repo-btn:hover{opacity:.72}
+.repo-ico{width:7px;height:7px;border-right:1.3px solid currentColor;border-bottom:1.3px solid currentColor;
+  transform:rotate(45deg) translate(-1px,-1px);transition:transform .4s cubic-bezier(.2,.7,.3,1)}
+.repo-btn[aria-expanded="true"] .repo-ico{transform:rotate(-135deg) translate(-1px,-1px)}
+.repo-panel[hidden]{display:none}
+.repo-panel{margin-top:10px;border-top:1px solid var(--rule);animation:drop .6s cubic-bezier(.16,1,.3,1)}
+.repo{display:grid;grid-template-columns:1fr auto;gap:4px 16px;padding:14px 0;
+  border-bottom:1px solid var(--rule-soft);align-items:baseline;transition:padding-left .4s}
+.repo:hover{padding-left:10px}
+.repo-n{font-family:'IBM Plex Mono',monospace;font-size:12px;color:var(--ink);letter-spacing:.02em}
+.repo:hover .repo-n{color:var(--accent)}
+.repo-a{font-family:'IBM Plex Mono',monospace;font-size:12px;color:var(--ink-dim)}
+.repo:hover .repo-a{color:var(--accent)}
+.repo-d{grid-column:1/-1;font-size:13.5px;color:var(--ink-dim);line-height:1.6}
+</style>
 <body>
 
-  <!-- Navbar -->
-  <nav class="navbar" id="navbar">
-    <div class="nav-container">
-      <a href="#" class="nav-logo">PRETHAM</a>
-      <div class="nav-links" id="nav-links">
-        <a href="#projects">Projects</a>
-        <a href="#skills">Skills</a>
-        <a href="#certifications">Certifications</a>
-        <a href="#experience">Experience</a>
-        <a href="#contact">Contact</a>
-      </div>
-      <a href="resume.pdf" target="_blank" class="nav-cta">View Resume</a>
-      <button class="mobile-toggle" id="mobile-toggle" aria-label="Toggle menu">
-        <span></span>
-        <span></span>
-        <span></span>
-      </button>
+<div class="helix" id="helix" aria-hidden="true">
+  <svg viewBox="0 0 88 800" preserveAspectRatio="none" id="hxsvg">
+    <g id="hx-base"></g>
+    <clipPath id="hxclip"><rect id="hxrect" x="0" y="0" width="88" height="0"/></clipPath>
+    <g id="hx-lit" class="hx-lit" clip-path="url(#hxclip)"></g>
+  </svg>
+  <div id="hxmarks"></div>
+</div>
+
+<nav class="nav" id="nav">
+  <a href="#top" class="nav-name">PRETHAM VORUGANTI</a>
+  <div class="nav-links">
+    <a href="#about">About</a>
+    <a href="#work">Work</a>
+    <a href="#scale">Research</a>
+    <a href="#experience">Experience</a>
+    <a href="#education">Education</a>
+    <a href="#contact">Contact</a>
+    <a href="resume.pdf" target="_blank">Résumé ↗</a>
+  </div>
+</nav>
+
+
+<header class="hero" id="top">
+  <div class="wrap pl">
+    <p class="eyebrow">Software Engineer · AI · Security</p>
+    <h1 class="display">
+      <span class="reveal-line"><span>I build systems</span></span>
+      <span class="reveal-line"><span>that hold up</span></span>
+      <span class="reveal-line"><span><em>under load.</em></span></span>
+    </h1>
+    <p class="lede">
+      Backend platforms, security tooling, and applied ML — plus a research program that runs
+      one statistical method from <strong>protein nanoclusters to cosmic structure</strong>.
+      Currently an M.S. Applied Machine Learning student at Maryland.
+    </p>
+    <div class="hero-meta">
+      <div class="meta-cell"><div class="meta-k">Now</div><div class="meta-v">M.S. Applied ML<br><span>Maryland</span></div></div>
+      <div class="meta-cell"><div class="meta-k">Previously</div><div class="meta-v">Engineer Intern<br><span>Mastercard</span></div></div>
+      <div class="meta-cell"><div class="meta-k">Shipped</div><div class="meta-v">Chrome Extension<br><span>Published</span></div></div>
+      <div class="meta-cell"><div class="meta-k">Written</div><div class="meta-v">5 Manuscripts<br><span>4 domains</span></div></div>
     </div>
-  </nav>
+  </div>
+  <div class="scroll-hint" style="left:max(32px,calc(50vw - 508px))"><i></i> Scroll</div>
+</header>
 
-  <!-- Hero Section -->
-  <section class="hero">
-    <div class="hero-bg-gradient"></div>
-    <div class="container hero-content">
-      <div class="hero-text">
-        <p class="hero-label">SOFTWARE ENGINEER & AI DEVELOPER</p>
-        <h1 class="hero-title">Hi, I'm <span class="text-accent">Pretham</span></h1>
-        <p class="hero-subtitle">I build intelligent systems, cybersecurity tools, and scalable backend platforms using modern AI and cloud infrastructure.</p>
-        <div class="hero-buttons">
-          <a href="#projects" class="btn btn-primary">View Projects</a>
-          <a href="#contact" class="btn btn-secondary">Contact Me</a>
+<section class="about" id="about" data-mark="About">
+  <div class="wrap pl">
+    <div class="sec-head rise" data-n="00"><span class="sec-num">00</span><h2 class="sec-title">Hi, I'm Pretham.</h2></div>
+    <div class="about-lines">
+      <div class="al slide-l">
+        <div class="al-k">Right now</div>
+        <div>
+          <p class="al-v">I'm a master's student in <b>Applied Machine Learning</b> at the University of Maryland.</p>
+          <p class="al-sub">I finished a B.S. in Cybersecurity at Purdue in May 2026 and started at Maryland that August. The through-line is the same one I've had since freshman year: I like problems where the answer has to be measured, not asserted.</p>
         </div>
       </div>
-      <div class="hero-visual">
-        <div class="hero-card-stack">
-          <div class="hero-card card-1">
-            <div class="card-dot"></div>
-            <div class="card-line w-60"></div>
-            <div class="card-line w-80"></div>
-            <div class="card-line w-40"></div>
-          </div>
-          <div class="hero-card card-2">
-            <div class="card-dot green"></div>
-            <div class="card-line w-70"></div>
-            <div class="card-line w-50"></div>
-            <div class="card-line w-90"></div>
-          </div>
-          <div class="hero-card card-3">
-            <div class="card-dot purple"></div>
-            <div class="card-line w-50"></div>
-            <div class="card-line w-80"></div>
-            <div class="card-line w-60"></div>
-          </div>
+      <div class="al slide-r">
+        <div class="al-k">Before this</div>
+        <div>
+          <p class="al-v">I spent fifteen months at <b>Mastercard</b> turning noisy security telemetry into things people could act on.</p>
+          <p class="al-sub">Fraud signals, correlation and triage workflows, and ML-based threat classification — in a regulated environment where "probably fine" isn't an acceptable answer. Before that, an IT security analyst internship at NSG Info doing log monitoring and vulnerability assessment.</p>
         </div>
       </div>
-    </div>
-  </section>
-
-  <!-- Projects Section -->
-  <section class="section" id="projects">
-    <div class="container">
-      <p class="section-label">PORTFOLIO</p>
-      <h2 class="section-title">Featured Projects</h2>
-      <div class="projects-grid">
-
-        <div class="project-card">
-          <div class="project-header">
-            <h3 class="project-title">Tenant Lease AI</h3>
-            <span class="project-badge">Featured</span>
-          </div>
-          <p class="project-desc">Published Chrome extension that analyzes rental leases and flags terms working against the tenant. Detects 24 clause types and 68+ red-flag patterns, extracts text from digital PDFs via PDF.js and scanned ones via Tesseract OCR (tested to 70+ pages), and cites the relevant state tenant statutes alongside each finding.</p>
-          <div class="project-tags">
-            <span class="tag">JavaScript</span>
-            <span class="tag">Chrome Extension</span>
-            <span class="tag">OpenAI</span>
-            <span class="tag">PDF.js</span>
-            <span class="tag">Tesseract OCR</span>
-          </div>
-          <div class="project-links">
-            <a href="https://chromewebstore.google.com/detail/lmpdooiklheoifbeipdepajjonidajfl" target="_blank" class="btn btn-sm btn-primary">Chrome Web Store</a>
-            <a href="tenant-lease-ai.html" class="btn btn-sm btn-ghost">Learn More</a>
-            <a href="https://github.com/saivoru777-ship-it/tenant-lease-ai" target="_blank" class="btn btn-sm btn-ghost">GitHub</a>
-          </div>
+      <div class="al slide-l">
+        <div class="al-k">On the side</div>
+        <div>
+          <p class="al-v">I ship things. A Chrome extension, a locker platform, a grocery reference, an <b>agent orchestrator</b>.</p>
+          <p class="al-sub">Some of it is commercial, some of it exists because I wanted it to. The lease analyzer came out of reading my own lease and realizing I couldn't tell which clauses were normal. It's on the Chrome Web Store now.</p>
         </div>
-
-        <div class="project-card">
-          <div class="project-header">
-            <h3 class="project-title">Chakram</h3>
-            <span class="project-badge">Building</span>
-          </div>
-          <p class="project-desc">A local AI project conductor: one daemon on the Mac that runs AI work as discrete, auditable jobs across every project. Built on the Claude Agent SDK with a fail-safe capability gate (allow &rarr; deny &rarr; everything else asks), an append-only run ledger with snapshot rollback, and a dual-record memory that drafts changes for human approval before writing &mdash; so project knowledge can't silently rot. ~2,000 lines of TypeScript; 82 deterministic and 5 live tests. Private repository.</p>
-          <div class="project-tags">
-            <span class="tag">TypeScript</span>
-            <span class="tag">Claude Agent SDK</span>
-            <span class="tag">SQLite</span>
-            <span class="tag">Node</span>
-            <span class="tag">Agent Orchestration</span>
-          </div>
+      </div>
+      <div class="al slide-r">
+        <div class="al-k">And then</div>
+        <div>
+          <p class="al-v">There's the research, which got out of hand in the best way — <b>thirty-one orders of magnitude</b>.</p>
+          <p class="al-sub">I built a statistical test for spatial clustering, and then kept finding places it worked: synapses on dendrites, cell types across the mouse brain, protein nanoclusters, and the large-scale structure of the universe. Five manuscripts so far.</p>
         </div>
-
-        <div class="project-card">
-          <div class="project-header">
-            <h3 class="project-title">Loaded</h3>
-            <span class="project-badge data">Live</span>
-          </div>
-          <p class="project-desc">A grocery reference built from primary testing data rather than from ingredient lists &mdash; the two things label-scanner apps get wrong. Covers 44 produce items with residue ratings drawn from USDA pesticide data, sorts every common meat claim into independently audited, affidavit-only, or meaningless, and explains what foam trays and absorbent pads actually are. No build step, no dependencies, no backend, no tracking.</p>
-          <div class="project-tags">
-            <span class="tag">JavaScript</span>
-            <span class="tag">Static Site</span>
-            <span class="tag">USDA Data</span>
-            <span class="tag">GitHub Pages</span>
-          </div>
-          <div class="project-links">
-            <a href="https://saivoru777-ship-it.github.io/loaded/" target="_blank" class="btn btn-sm btn-primary">Live Site</a>
-            <a href="https://github.com/saivoru777-ship-it/loaded" target="_blank" class="btn btn-sm btn-ghost">GitHub</a>
-          </div>
+      </div>
+      <div class="al slide-l">
+        <div class="al-k">Looking for</div>
+        <div>
+          <p class="al-v">Software engineering roles where the systems have to <b>actually stay up</b>.</p>
+          <p class="al-sub">Backend, infrastructure, applied ML, or security tooling. I'm most useful where correctness matters and failure modes are interesting.</p>
         </div>
-
-        <div class="project-card">
-          <div class="project-header">
-            <h3 class="project-title">Smart Locker System</h3>
-            <span class="project-badge startup">Startup</span>
-          </div>
-          <p class="project-desc">Production backend for a smart food delivery locker platform with real-time Bluetooth access, predictive analytics, and queue management. MQTT device control, Redis-backed rate limiting, and JWT authentication, alongside the iOS app and hardware integration. Private repository.</p>
-          <div class="project-tags">
-            <span class="tag">TypeScript</span>
-            <span class="tag">MQTT</span>
-            <span class="tag">Redis</span>
-            <span class="tag">JWT</span>
-            <span class="tag">iOS</span>
-          </div>
-        </div>
-
-        <div class="project-card">
-          <div class="project-header">
-            <h3 class="project-title">Network Intrusion Detection</h3>
-            <span class="project-badge security">Security</span>
-          </div>
-          <p class="project-desc">Real-time network intrusion detection system using signature and anomaly-based detection with Python and Scapy, tested on Kali Linux.</p>
-          <div class="project-tags">
-            <span class="tag">Python</span>
-            <span class="tag">Scapy</span>
-            <span class="tag">Kali Linux</span>
-            <span class="tag">IDS</span>
-          </div>
-          <div class="project-links">
-            <a href="https://github.com/saivoru777-ship-it/NIDS" target="_blank" class="btn btn-sm btn-ghost">GitHub</a>
-          </div>
-        </div>
-
-        <div class="project-card">
-          <div class="project-header">
-            <h3 class="project-title">Cosmic Pattern Analysis</h3>
-            <span class="project-badge research">Research</span>
-          </div>
-          <p class="project-desc">Tested whether the 2023 Einstein hat monotile leaves detectable signatures in large-scale cosmic structure. Built and validated a covariance-aware multiscale &chi;&sup2; pipeline on synthetic &Lambda;CDM data. Found no aperiodic tiling signatures (power-spectrum KS p &lt; 10&sup;&minus;15; slopes incompatible with tiling). Discovered an unexplained Voronoi neighbor anomaly: all point distributions converge to &asymp;25.5 face-adjacent neighbors (CV&nbsp;=&nbsp;0.23%) vs. the classical expectation of 15.5. Full manuscript.</p>
-          <div class="project-tags">
-            <span class="tag">Python</span>
-            <span class="tag">SciPy</span>
-            <span class="tag">Astrophysics</span>
-            <span class="tag">Persistent Homology</span>
-            <span class="tag">Cosmology</span>
-          </div>
-          <div class="project-links">
-            <a href="https://github.com/saivoru777-ship-it/cosmic-pattern-analysis/blob/main/paper/main.pdf" target="_blank" class="btn btn-sm btn-primary">Paper</a>
-            <a href="https://github.com/saivoru777-ship-it/cosmic-pattern-analysis" target="_blank" class="btn btn-sm btn-ghost">GitHub</a>
-          </div>
-        </div>
-
-        <div class="project-card">
-          <div class="project-header">
-            <h3 class="project-title">Neurostat</h3>
-            <span class="project-badge research">Research</span>
-          </div>
-          <p class="project-desc">Multiscale statistical framework for detecting spatial organization of synapses on dendritic trees. Implements variance-mean ratio analysis with dendrite-constrained null models on tree graph structures.</p>
-          <div class="project-tags">
-            <span class="tag">Python</span>
-            <span class="tag">SciPy</span>
-            <span class="tag">Computational Neuroscience</span>
-            <span class="tag">Statistics</span>
-          </div>
-          <div class="project-links">
-            <a href="https://github.com/saivoru777-ship-it/neurostat" target="_blank" class="btn btn-sm btn-ghost">GitHub</a>
-          </div>
-        </div>
-
-        <div class="project-card">
-          <div class="project-header">
-            <h3 class="project-title">Input-Specific Dendritic Clustering</h3>
-            <span class="project-badge neuroscience">Neuroscience</span>
-          </div>
-          <p class="project-desc">Quantitative evidence that synapses from the same presynaptic neuron cluster on specific dendritic branches. Analyzed 15,000+ synapses across 12 MICrONS cortical neurons with distance-matched permutation nulls.</p>
-          <div class="project-tags">
-            <span class="tag">Python</span>
-            <span class="tag">Connectomics</span>
-            <span class="tag">MICrONS</span>
-            <span class="tag">Neurostat</span>
-          </div>
-          <div class="project-links">
-            <a href="https://github.com/saivoru777-ship-it/neurostat-input-clustering" target="_blank" class="btn btn-sm btn-ghost">GitHub</a>
-          </div>
-        </div>
-
-        <div class="project-card">
-          <div class="project-header">
-            <h3 class="project-title">Spatial Transcriptomics Fingerprints</h3>
-            <span class="project-badge neuroscience">Neuroscience</span>
-          </div>
-          <p class="project-desc">Multiscale spatial fingerprints reveal cell type organization in the mouse brain. Analyzed 1.37M cells across isocortex, hippocampus, and thalamus from Allen Brain Cell Atlas MERFISH data. Distinguishes layered (cortical) from nuclear (thalamic) architecture via scale-dependent co-occurrence. Full manuscript with 9 main + 17 supplementary figures.</p>
-          <div class="project-tags">
-            <span class="tag">Python</span>
-            <span class="tag">Spatial Transcriptomics</span>
-            <span class="tag">MERFISH</span>
-            <span class="tag">Neurostat</span>
-          </div>
-          <div class="project-links">
-            <a href="https://github.com/saivoru777-ship-it/spatial-transcriptomics-fingerprints" target="_blank" class="btn btn-sm btn-ghost">GitHub</a>
-          </div>
-        </div>
-
-        <div class="project-card">
-          <div class="project-header">
-            <h3 class="project-title">SMLM Multiscale Clustering</h3>
-            <span class="project-badge research">Research</span>
-          </div>
-          <p class="project-desc">Multiscale variance-mean ratio framework for detecting protein nanoclusters in single-molecule localization microscopy. Resolves clustering at nm scales with covariance-aware chi-squared testing and geometry-matched null models. Complete manuscript with 5 main + 4 supplementary figures.</p>
-          <div class="project-tags">
-            <span class="tag">Python</span>
-            <span class="tag">Super-Resolution Microscopy</span>
-            <span class="tag">Statistics</span>
-            <span class="tag">Biophysics</span>
-          </div>
-          <div class="project-links">
-            <a href="https://github.com/saivoru777-ship-it/smlm-multiscale-clustering" target="_blank" class="btn btn-sm btn-ghost">GitHub</a>
-          </div>
-        </div>
-
-        <div class="project-card">
-          <div class="project-header">
-            <h3 class="project-title">MICrONS Population-Scale Replication</h3>
-            <span class="project-badge neuroscience">Neuroscience</span>
-          </div>
-          <p class="project-desc">Population-scale analysis of 2,138 neurons (136,414 branches, ~8.2M synapses) from MICrONS mouse visual cortex. Discovers that inhibitory neurons are not a homogeneous class: random-slope models reveal the pooled inhibitory slope (−0.07) is an averaging artifact masking an inverted BC (PV-like) profile (+1.81) and BPC/NGC slopes steeper than the excitatory average (−2.76, −3.25). Traces a multi-stage pathway from electrotonic regime → afferent subtype composition → partner architecture → within-axon bouton placement: basket cell afferents concentrate on compact branches in 89% of neurons (p=4×10⁻⁴⁵), and BC contacts are placed more compactly on compact branches even after conditioning on contact multiplicity (p&lt;10⁻¹⁸ at every k). Afferent identity + partner architecture jointly explain 18–26% of the inhibitory regime effect, with the remaining unexplained variance pointing toward cell-autonomous placement rules not resolved at partner-level granularity.</p>
-          <div class="project-tags">
-            <span class="tag">Python</span>
-            <span class="tag">Connectomics</span>
-            <span class="tag">MICrONS</span>
-            <span class="tag">Mixed-Effects Models</span>
-            <span class="tag">Mediation Analysis</span>
-          </div>
-          <div class="project-links">
-            <a href="https://github.com/saivoru777-ship-it/microns-explorer" target="_blank" class="btn btn-sm btn-ghost">GitHub</a>
-          </div>
-        </div>
-
-        <div class="project-card">
-          <div class="project-header">
-            <h3 class="project-title">Dendritic Regime Coupling</h3>
-            <span class="project-badge neuroscience">Neuroscience</span>
-          </div>
-          <p class="project-desc">Preliminary study (12 neurons) establishing that electrotonic structure shapes partner-level synaptic organization on cortical dendrites. Superseded by the population-scale replication above but introduced the mediation framework and cell-type dissociation hypothesis.</p>
-          <div class="project-tags">
-            <span class="tag">Python</span>
-            <span class="tag">Connectomics</span>
-            <span class="tag">MICrONS</span>
-            <span class="tag">Cable Theory</span>
-          </div>
-          <div class="project-links">
-            <a href="https://github.com/saivoru777-ship-it/dendritic-regime-coupling" target="_blank" class="btn btn-sm btn-ghost">GitHub</a>
-          </div>
-        </div>
-
-        <div class="project-card">
-          <div class="project-header">
-            <h3 class="project-title">Biospatial Regime Space</h3>
-            <span class="project-badge research">Research</span>
-          </div>
-          <p class="project-desc">Theoretical framework mapping 7 spatial organization mechanisms (random, clustered, exclusion, layered, compartmental, branch-constrained, hierarchical) into a descriptor-based regime space. Shows VMR fingerprints resolve a structured clustering manifold while placing sub-Poisson regimes near the null cloud. Empirical data from all three case studies projected into the simulation-defined space.</p>
-          <div class="project-tags">
-            <span class="tag">Python</span>
-            <span class="tag">Spatial Statistics</span>
-            <span class="tag">PCA</span>
-            <span class="tag">Simulation</span>
-          </div>
-          <div class="project-links">
-            <a href="https://github.com/saivoru777-ship-it/biospatial-regimes" target="_blank" class="btn btn-sm btn-ghost">GitHub</a>
-          </div>
-        </div>
-
       </div>
     </div>
-  </section>
+  </div>
+</section>
 
-  <!-- Skills Section -->
-  <section class="section section-alt" id="skills">
-    <div class="container">
-      <p class="section-label">EXPERTISE</p>
-      <h2 class="section-title">Skills & Technologies</h2>
-      <div class="skills-grid">
+<section id="work" data-mark="Work">
+  <div class="wrap pl">
+    <div class="sec-head rise" data-n="01"><span class="sec-num">01</span><h2 class="sec-title">Selected Work</h2></div>
+    <p class="sec-intro rise">Four projects that show the range: something shipped to real users, a production distributed system, an agent-orchestration daemon, and a security tool with measured throughput.</p>
 
-        <div class="skill-group">
-          <h3 class="skill-group-title">Programming</h3>
-          <div class="skill-tags">
-            <span class="skill-tag">Python</span>
-            <span class="skill-tag">JavaScript</span>
-            <span class="skill-tag">TypeScript</span>
-            <span class="skill-tag">Java</span>
-            <span class="skill-tag">SQL</span>
-            <span class="skill-tag">Bash</span>
-            <span class="skill-tag">C++</span>
-            <span class="skill-tag">Swift</span>
-            <span class="skill-tag">PowerShell</span>
-            <span class="skill-tag">HTML/CSS</span>
-          </div>
+    <article class="entry rise">
+      <div class="entry-idx">001</div>
+      <div>
+        <h3 class="entry-title">Tenant Lease AI <span class="arrow">↗</span></h3>
+        <p class="entry-status">Shipped · <b>Chrome Web Store</b> · 2025</p>
+        <p class="entry-desc">Analyzes rental leases and flags terms working against the tenant. 24 clause types, 68+ red-flag patterns, PDF.js for digital documents and Tesseract OCR for scans, with state tenant statutes cited alongside each finding. A five-stage deterministic pipeline resolves routine cases before any model call — cutting cost per analysis from $0.82 to $0.15.</p>
+        <div class="entry-tags"><span>JavaScript</span><span>Chrome Extension</span><span>Applied ML</span><span>OCR</span></div>
+        <div class="entry-links"><a href="https://chromewebstore.google.com/detail/lmpdooiklheoifbeipdepajjonidajfl" target="_blank">Web Store</a><a href="tenant-lease-ai.html">Detail</a><a href="https://github.com/saivoru777-ship-it/tenant-lease-ai" target="_blank">GitHub</a></div>
+      </div>
+      <figure class="entry-fig">
+        <svg class="schem" viewBox="0 0 260 132">
+          <rect class="node" x="4" y="20" width="52" height="26" rx="3"/><text x="30" y="36" text-anchor="middle">lease.pdf</text>
+          <rect class="node" x="96" y="4" width="60" height="24" rx="3"/><text x="126" y="19" text-anchor="middle">PDF.js</text>
+          <rect class="node" x="96" y="38" width="60" height="24" rx="3"/><text x="126" y="53" text-anchor="middle">Tesseract</text>
+          <rect class="node" x="96" y="80" width="60" height="24" rx="3"/><text x="126" y="95" text-anchor="middle">5-stage</text>
+          <rect class="node" x="196" y="46" width="58" height="30" rx="3"/><text x="225" y="58" text-anchor="middle">findings</text>
+          <text x="225" y="69" text-anchor="middle" class="anno">+ statute</text>
+          <path class="flow" style="--len:340" d="M56 33 H96 M56 33 V50 H96 M156 16 H176 V61 H196 M156 50 H176 M156 92 H176 V61"/>
+          <path class="dash" d="M126 62 V80"/><text x="132" y="76" class="anno">routine first</text>
+        </svg>
+        <figcaption>fig 1 — extraction &amp; routing</figcaption>
+      </figure>
+    </article>
+
+    <article class="entry rise">
+      <div class="entry-idx">002</div>
+      <div>
+        <h3 class="entry-title">Smart Locker System</h3>
+        <p class="entry-status">Production · <b>Startup</b> · 2024–present</p>
+        <p class="entry-desc">Backend for a smart food-delivery locker platform. TypeScript services over PostgreSQL and Redis/BullMQ, coordinating Bluetooth lockers through asynchronous delivery workflows. The hard part was failure behavior: idempotent retries, state recovery, and failure isolation so a wedged device never takes the queue down with it.</p>
+        <div class="entry-tags"><span>TypeScript</span><span>PostgreSQL</span><span>Redis/BullMQ</span><span>MQTT</span><span>Prometheus</span></div>
+        <div class="entry-links"><a href="#contact">Private — ask me</a></div>
+      </div>
+      <figure class="entry-fig">
+        <svg class="schem" viewBox="0 0 260 132">
+          <rect class="node" x="4" y="52" width="48" height="26" rx="3"/><text x="28" y="68" text-anchor="middle">client</text>
+          <rect class="node" x="96" y="52" width="52" height="26" rx="3"/><text x="122" y="68" text-anchor="middle">API</text>
+          <rect class="node" x="96" y="100" width="52" height="24" rx="3"/><text x="122" y="115" text-anchor="middle">postgres</text>
+          <rect class="node" x="96" y="8" width="52" height="24" rx="3"/><text x="122" y="23" text-anchor="middle">BullMQ</text>
+          <rect class="node" x="196" y="52" width="56" height="26" rx="3"/><text x="224" y="68" text-anchor="middle">locker</text>
+          <path class="flow" style="--len:300" d="M52 65 H96 M122 52 V32 M122 78 V100 M148 65 H196"/>
+          <text x="160" y="60" class="anno">MQTT</text><text x="152" y="26" class="anno">idempotent</text><text x="152" y="36" class="anno">retries</text>
+        </svg>
+        <figcaption>fig 2 — device coordination</figcaption>
+      </figure>
+    </article>
+
+    <article class="entry rise">
+      <div class="entry-idx">003</div>
+      <div>
+        <h3 class="entry-title">Chakram</h3>
+        <p class="entry-status">Building · <b>Agent orchestration</b> · 2026</p>
+        <p class="entry-desc">A local daemon that runs AI work as discrete, auditable jobs across every project. Fail-safe capability gate — allow, then deny, then everything else asks. Append-only run ledger with snapshot rollback, and a dual-record memory that drafts changes for human approval before writing, so project knowledge can't silently rot. ~2,000 lines of TypeScript, 82 deterministic tests.</p>
+        <div class="entry-tags"><span>TypeScript</span><span>Claude Agent SDK</span><span>SQLite</span><span>Node</span></div>
+        <div class="entry-links"><a href="#contact">Private — ask me</a></div>
+      </div>
+      <figure class="entry-fig">
+        <svg class="schem" viewBox="0 0 260 132">
+          <rect class="node" x="4" y="50" width="46" height="26" rx="3"/><text x="27" y="66" text-anchor="middle">job</text>
+          <path class="node" d="M92 63 L118 44 L144 63 L118 82 Z"/><text x="118" y="66" text-anchor="middle">gate</text>
+          <rect class="node" x="188" y="14" width="64" height="24" rx="3"/><text x="220" y="29" text-anchor="middle">allow</text>
+          <rect class="node" x="188" y="50" width="64" height="24" rx="3"/><text x="220" y="65" text-anchor="middle">ask</text>
+          <rect class="node" x="188" y="86" width="64" height="24" rx="3"/><text x="220" y="101" text-anchor="middle">deny</text>
+          <path class="flow" style="--len:290" d="M50 63 H92 M144 63 H166 V26 H188 M166 63 H188 M166 63 V98 H188"/>
+          <text x="96" y="100" class="anno">append-only ledger</text>
+        </svg>
+        <figcaption>fig 3 — capability gate</figcaption>
+      </figure>
+    </article>
+
+    <article class="entry rise">
+      <div class="entry-idx">004</div>
+      <div>
+        <h3 class="entry-title">Network Intrusion Detection <span class="arrow">↗</span></h3>
+        <p class="entry-status">Open source · <b>Python / Scapy</b> · 2026</p>
+        <p class="entry-desc">1,900 lines of packet processing on raw sockets, sustaining 1,000+ packets/second at under 1 ms analysis latency. 12 signature rules plus 3-sigma and 30% anomaly thresholds with severity triage. Capture, detection, and telemetry run as separate paths so each can be tested and debugged on its own.</p>
+        <div class="entry-tags"><span>Python</span><span>Scapy</span><span>Raw Sockets</span><span>Multithreading</span></div>
+        <div class="entry-links"><a href="https://github.com/saivoru777-ship-it/NIDS" target="_blank">GitHub</a></div>
+      </div>
+      <figure class="entry-fig">
+        <svg class="schem" viewBox="0 0 260 132">
+          <rect class="node" x="4" y="52" width="46" height="26" rx="3"/><text x="27" y="68" text-anchor="middle">NIC</text>
+          <rect class="node" x="90" y="52" width="56" height="26" rx="3"/><text x="118" y="68" text-anchor="middle">capture</text>
+          <rect class="node" x="186" y="14" width="66" height="24" rx="3"/><text x="219" y="29" text-anchor="middle">signature</text>
+          <rect class="node" x="186" y="50" width="66" height="24" rx="3"/><text x="219" y="65" text-anchor="middle">anomaly</text>
+          <rect class="node" x="186" y="86" width="66" height="24" rx="3"/><text x="219" y="101" text-anchor="middle">telemetry</text>
+          <path class="flow" style="--len:300" d="M50 65 H90 M146 65 H166 V26 H186 M166 65 H186 M166 65 V98 H186"/>
+          <text x="92" y="44" class="anno">1000 pkt/s · &lt;1ms</text>
+        </svg>
+        <figcaption>fig 4 — separated paths</figcaption>
+      </figure>
+    </article>
+
+      <div class="more-wrap">
+        <button class="more-btn" id="more-projects" aria-expanded="false" aria-controls="more-projects-panel">
+          <span class="more-lbl">Show 4 more projects</span>
+          <span class="more-ico" aria-hidden="true"></span>
+        </button>
+      </div>
+      <div id="more-projects-panel" class="more-panel" hidden>
+        <p class="sec-intro" style="margin:44px 0 0">Smaller and earlier, but real. Two ventures in development, one live reference site, and a video pipeline that started as a question about whether taste is automatable.</p>
+<div class="mini-grid">
+      <div class="mini rise">
+        <div class="mini-k"><span>In development</span><em>App</em></div>
+        <h3 class="mini-t">Latched</h3>
+        <p class="mini-d">A social app built around date ideas and the venues behind them. React front end with venue profiles for visitors and owners — and a full trust-and-safety layer built in from the start: age gating, reporting, blocking, muted words, sensitive-media blurring, account deletion.</p>
+        <div class="mini-tags"><span>React</span><span>Mobile</span><span>Trust &amp; Safety</span></div>
+      </div>
+      <div class="mini rise d1">
+        <div class="mini-k"><span>In development</span><em>Venture</em></div>
+        <h3 class="mini-t">Locks of Love</h3>
+        <p class="mini-d">A physical love-lock installation for venues and campuses. Cities cut love locks off public bridges because uncontrolled load threatens structures never engineered for it — so the product is the engineering answer: a permanent wall sized by moment-balance analysis, with a defined archive cycle.</p>
+        <div class="mini-tags"><span>Product Design</span><span>Structural Analysis</span></div>
+      </div>
+      <div class="mini rise d2">
+        <div class="mini-k"><span>Live</span><em>Site</em></div>
+        <h3 class="mini-t">Loaded</h3>
+        <p class="mini-d">A grocery reference built from primary testing data rather than ingredient lists. 44 produce items with residue ratings from USDA pesticide data, every common meat claim sorted into independently audited, affidavit-only, or meaningless. No build step, no backend, no tracking.</p>
+        <div class="mini-tags"><span>JavaScript</span><span>USDA Data</span><span>Static</span></div>
+        <div class="mini-links"><a href="https://saivoru777-ship-it.github.io/loaded/" target="_blank">Live ↗</a><a href="https://github.com/saivoru777-ship-it/loaded" target="_blank">GitHub</a></div>
+      </div>
+      <div class="mini rise d3">
+        <div class="mini-k"><span>In development</span><em>Pipeline</em></div>
+        <h3 class="mini-t">Auto-Edits</h3>
+        <p class="mini-d">An agentic video pipeline: a trending sound plus a prompt becomes a finished vertical edit. A sound engine extracts beats and energy arc, a style learner infers how editors cut to that specific sound, a planner assigns moments to beats, and an ffmpeg renderer runs with a scoring critic in the loop.</p>
+        <div class="mini-tags"><span>Python</span><span>FFmpeg</span><span>Audio DSP</span></div>
+      </div>
+      </div>
+      </div>
+  </div>
+</section>
+
+
+
+<section class="scale-sec" id="scale" data-mark="Research">
+  <div class="wrap pl">
+    <div class="sec-head rise" data-n="02"><span class="sec-num">02</span><h2 class="sec-title">One Method, Every Scale</h2></div>
+    <p class="sec-intro rise">I built a covariance-aware multiscale statistical test for spatial organization, then spent two years finding out how far it travels. The same mathematics that finds protein nanoclusters finds structure in the distribution of galaxies — thirty-one orders of magnitude apart.</p>
+  </div>
+  <div class="wrap">
+    <div class="scale-lay">
+      <div class="axis-col">
+        <div class="axis">
+          <div class="axis-line" id="axisline"></div>
+          <div class="tick" data-i="0" style="top:6%"><div class="tick-exp">10⁻⁸</div><div class="tick-dot"></div><div class="tick-lbl">nm</div></div>
+          <div class="tick" data-i="1" style="top:28%"><div class="tick-exp">10⁻⁶</div><div class="tick-dot"></div><div class="tick-lbl">µm</div></div>
+          <div class="tick" data-i="2" style="top:50%"><div class="tick-exp">10⁻³</div><div class="tick-dot"></div><div class="tick-lbl">mm</div></div>
+          <div class="tick" data-i="3" style="top:72%"><div class="tick-exp">—</div><div class="tick-dot"></div><div class="tick-lbl">theory</div></div>
+          <div class="tick" data-i="4" style="top:94%"><div class="tick-exp">10²³</div><div class="tick-dot"></div><div class="tick-lbl">Mpc</div></div>
         </div>
-
-        <div class="skill-group">
-          <h3 class="skill-group-title">Cloud & DevOps</h3>
-          <div class="skill-tags">
-            <span class="skill-tag">AWS</span>
-            <span class="skill-tag">Azure</span>
-            <span class="skill-tag">GCP</span>
-            <span class="skill-tag">Docker</span>
-            <span class="skill-tag">Kubernetes</span>
-            <span class="skill-tag">Terraform</span>
-            <span class="skill-tag">Ansible</span>
-            <span class="skill-tag">Jenkins</span>
-            <span class="skill-tag">CI/CD</span>
-            <span class="skill-tag">GitHub Actions</span>
-          </div>
-        </div>
-
-        <div class="skill-group">
-          <h3 class="skill-group-title">Cybersecurity</h3>
-          <div class="skill-tags">
-            <span class="skill-tag">Wireshark</span>
-            <span class="skill-tag">Nmap</span>
-            <span class="skill-tag">Metasploit</span>
-            <span class="skill-tag">Burp Suite</span>
-            <span class="skill-tag">Kali Linux</span>
-            <span class="skill-tag">Active Directory</span>
-            <span class="skill-tag">pfSense</span>
-            <span class="skill-tag">Snort/IDS</span>
-            <span class="skill-tag">Pentesting</span>
-            <span class="skill-tag">Scapy</span>
-          </div>
-        </div>
-
-        <div class="skill-group">
-          <h3 class="skill-group-title">AI & Data</h3>
-          <div class="skill-tags">
-            <span class="skill-tag">OpenAI API</span>
-            <span class="skill-tag">LangChain</span>
-            <span class="skill-tag">TensorFlow</span>
-            <span class="skill-tag">Scikit-learn</span>
-            <span class="skill-tag">Pandas</span>
-            <span class="skill-tag">NumPy</span>
-            <span class="skill-tag">SciPy</span>
-            <span class="skill-tag">Matplotlib</span>
-            <span class="skill-tag">OCR/NLP</span>
-            <span class="skill-tag">Jupyter</span>
-          </div>
-        </div>
-
-        <div class="skill-group">
-          <h3 class="skill-group-title">Computational Neuroscience</h3>
-          <div class="skill-tags">
-            <span class="skill-tag">Mixed-Effects Models</span>
-            <span class="skill-tag">Mediation Analysis</span>
-            <span class="skill-tag">Spatial Statistics</span>
-            <span class="skill-tag">Cable Theory</span>
-            <span class="skill-tag">Connectomics</span>
-            <span class="skill-tag">CAVEclient</span>
-            <span class="skill-tag">Permutation Testing</span>
-            <span class="skill-tag">Bootstrap CIs</span>
-            <span class="skill-tag">Statsmodels</span>
-            <span class="skill-tag">Graph Theory</span>
-          </div>
-        </div>
-
-        <div class="skill-group">
-          <h3 class="skill-group-title">Web & Backend</h3>
-          <div class="skill-tags">
-            <span class="skill-tag">Node.js</span>
-            <span class="skill-tag">Express</span>
-            <span class="skill-tag">React</span>
-            <span class="skill-tag">Flask</span>
-            <span class="skill-tag">FastAPI</span>
-            <span class="skill-tag">MongoDB</span>
-            <span class="skill-tag">MySQL</span>
-            <span class="skill-tag">Redis</span>
-            <span class="skill-tag">GraphQL</span>
-            <span class="skill-tag">REST APIs</span>
-          </div>
-        </div>
-
-        <div class="skill-group">
-          <h3 class="skill-group-title">Monitoring & Tools</h3>
-          <div class="skill-tags">
-            <span class="skill-tag">Splunk</span>
-            <span class="skill-tag">Datadog</span>
-            <span class="skill-tag">Prometheus</span>
-            <span class="skill-tag">Grafana</span>
-            <span class="skill-tag">CloudWatch</span>
-            <span class="skill-tag">Jira</span>
-            <span class="skill-tag">ServiceNow</span>
-            <span class="skill-tag">Postman</span>
-          </div>
-        </div>
-
+      </div>
+      <div class="studies">
+        <article class="study" data-i="0">
+          <p class="study-scale">10⁻⁸ m · nanometre</p>
+          <h3 class="study-title">Protein Nanoclusters</h3>
+          <p class="study-desc">Multiscale variance-mean ratio testing for clustering in single-molecule localization microscopy, with geometry-matched null models that account for the imaging artifacts which fool naive cluster detection.</p>
+          <div class="study-num"><div><b>5+4</b><i>figures</i></div><div><b>SMLM</b><i>modality</i></div></div>
+          <div class="repo-wrap"><button class="repo-btn" aria-expanded="false"><span class="repo-ico" aria-hidden="true"></span>1 repository</button><div class="repo-panel" hidden><a class="repo" href="https://github.com/saivoru777-ship-it/smlm-multiscale-clustering" target="_blank"><span class="repo-n">SMLM Multiscale Clustering</span><span class="repo-d">Nanocluster detection in localization microscopy</span><span class="repo-a">↗</span></a></div></div></article>
+        <article class="study" data-i="1">
+          <p class="study-scale">10⁻⁶ m · micrometre</p>
+          <h3 class="study-title">Synapses on Dendrites</h3>
+          <p class="study-desc">Synapses from the same presynaptic neuron cluster on specific dendritic branches — established across 15,000+ synapses with distance-matched permutation nulls, then scaled to a population of 2,138 neurons from MICrONS mouse visual cortex. At that scale the pooled inhibitory signal turns out to be an averaging artifact hiding opposite behaviours in different cell types.</p>
+          <div class="study-num"><div><b>2,138</b><i>neurons</i></div><div><b>8.2M</b><i>synapses</i></div><div><b>136K</b><i>branches</i></div></div>
+          <div class="repo-wrap"><button class="repo-btn" aria-expanded="false"><span class="repo-ico" aria-hidden="true"></span>4 repositories</button><div class="repo-panel" hidden><a class="repo" href="https://github.com/saivoru777-ship-it/microns-explorer" target="_blank"><span class="repo-n">MICrONS Explorer</span><span class="repo-d">Population replication — 2,138 neurons, 8.2M synapses</span><span class="repo-a">↗</span></a><a class="repo" href="https://github.com/saivoru777-ship-it/neurostat" target="_blank"><span class="repo-n">Neurostat</span><span class="repo-d">The core multiscale VMR library everything is built on</span><span class="repo-a">↗</span></a><a class="repo" href="https://github.com/saivoru777-ship-it/neurostat-input-clustering" target="_blank"><span class="repo-n">Input-Specific Clustering</span><span class="repo-d">Partner-specific clustering across 15,000+ synapses</span><span class="repo-a">↗</span></a><a class="repo" href="https://github.com/saivoru777-ship-it/dendritic-regime-coupling" target="_blank"><span class="repo-n">Dendritic Regime Coupling</span><span class="repo-d">The original 12-neuron study that started it</span><span class="repo-a">↗</span></a></div></div></article>
+        <article class="study" data-i="2">
+          <p class="study-scale">10⁻³ m · millimetre</p>
+          <h3 class="study-title">Brain Region Fingerprints</h3>
+          <p class="study-desc">Spatial fingerprints separating layered cortical architecture from nuclear thalamic architecture through scale-dependent co-occurrence, across 1.37M cells of Allen Brain Cell Atlas MERFISH data.</p>
+          <div class="study-num"><div><b>1.37M</b><i>cells</i></div><div><b>3</b><i>structures</i></div></div>
+          <div class="repo-wrap"><button class="repo-btn" aria-expanded="false"><span class="repo-ico" aria-hidden="true"></span>1 repository</button><div class="repo-panel" hidden><a class="repo" href="https://github.com/saivoru777-ship-it/spatial-transcriptomics-fingerprints" target="_blank"><span class="repo-n">Spatial Transcriptomics Fingerprints</span><span class="repo-d">MERFISH, 1.37M cells across three structures</span><span class="repo-a">↗</span></a></div></div></article>
+        <article class="study" data-i="3">
+          <p class="study-scale">Scale-free · theory</p>
+          <h3 class="study-title">Biospatial Regime Space</h3>
+          <p class="study-desc">Seven organizational mechanisms — random, clustered, exclusion, layered, compartmental, branch-constrained, hierarchical — mapped into a descriptor space, with every empirical dataset projected back into it. The framework that makes the other four comparable to each other.</p>
+          <div class="study-num"><div><b>7</b><i>mechanisms</i></div><div><b>1M+</b><i>simulations</i></div></div>
+          <div class="repo-wrap"><button class="repo-btn" aria-expanded="false"><span class="repo-ico" aria-hidden="true"></span>1 repository</button><div class="repo-panel" hidden><a class="repo" href="https://github.com/saivoru777-ship-it/biospatial-regimes" target="_blank"><span class="repo-n">Biospatial Regimes</span><span class="repo-d">Seven mechanisms projected into a descriptor space</span><span class="repo-a">↗</span></a></div></div></article>
+        <article class="study" data-i="4">
+          <p class="study-scale">10²³ m · megaparsec</p>
+          <h3 class="study-title">Cosmic Structure</h3>
+          <p class="study-desc">Whether the 2023 Einstein hat monotile leaves signatures in large-scale structure. It doesn't — a clean null. But the pipeline surfaced something unexplained: every point distribution tested converges on ≈25.5 face-adjacent Voronoi neighbours against a classical expectation of 15.5.</p>
+          <div class="study-num"><div><b>25.5</b><i>neighbours</i></div><div><b>0.23%</b><i>CV</i></div></div>
+          <div class="repo-wrap"><button class="repo-btn" aria-expanded="false"><span class="repo-ico" aria-hidden="true"></span>1 repository</button><div class="repo-panel" hidden><a class="repo" href="https://github.com/saivoru777-ship-it/cosmic-pattern-analysis" target="_blank"><span class="repo-n">Cosmic Pattern Analysis</span><span class="repo-d">Einstein hat monotile signatures in large-scale structure</span><span class="repo-a">↗</span></a></div></div></article>
       </div>
     </div>
-  </section>
+  </div>
+</section>
 
-  <!-- Certifications Section -->
-  <section class="section" id="certifications">
-    <div class="container">
-      <p class="section-label">CREDENTIALS</p>
-      <h2 class="section-title">Certifications</h2>
-      <div class="certs-grid">
+<section id="experience" data-mark="Experience">
+  <div class="wrap pl">
+    <div class="sec-head rise" data-n="03"><span class="sec-num">03</span><h2 class="sec-title">Experience</h2></div>
+    <p class="sec-intro rise">Two engineering internships, a startup backend, and a research program that has run alongside all of it.</p>
 
-        <div class="cert-card earned">
-          <div class="cert-status">Earned</div>
-          <h3 class="cert-name">AWS AI Practitioner</h3>
-          <p class="cert-issuer">Amazon Web Services</p>
-        </div>
+    <article class="role rise">
+      <div>
+        <div class="role-h"><h3 class="role-t">Engineer Intern</h3><span class="role-d">MAY 2025 — AUG 2026</span></div>
+        <p class="role-o">Mastercard</p>
+        <ul class="role-l">
+          <li>Built Python automation for high-volume security telemetry and fraud-signal analysis, turning noisy event data into repeatable workflows for correlation, triage, validation, and technical reporting.</li>
+          <li>Evaluated ML-based threat and fraud classification approaches, validated analytical outputs, and communicated findings to technical and leadership stakeholders in a regulated financial environment.</li>
+          <li>Improved repeatability of recurring investigations by structuring analytical outputs and reducing manual analysis steps; earned multiple awards for innovation and execution.</li>
+        </ul>
+      </div>
+      <div class="role-side">
+        <div class="meta-k">Signal → decision</div>
+        <svg class="spark" viewBox="0 0 200 56">
+          <path class="base" d="M0 40 H200"/>
+          <path style="--len:420" d="M0 44 L12 22 L20 47 L30 12 L38 45 L48 30 L58 49 L70 8 L80 46 L92 34 L104 48 L116 18 L126 45 L138 38 L150 47 L162 26 L176 44 L200 41"/>
+        </svg>
+        <div class="role-stack"><span>Python</span><span>Pandas</span><span>Anomaly Detection</span><span>Power BI</span><span>Fraud Signals</span></div>
+      </div>
+    </article>
 
-        <div class="cert-card earned">
-          <div class="cert-status">Earned</div>
-          <h3 class="cert-name">AWS Cloud Practitioner</h3>
-          <p class="cert-issuer">Amazon Web Services</p>
-        </div>
+    <article class="role rise">
+      <div>
+        <div class="role-h"><h3 class="role-t">IT Security Analyst Intern</h3><span class="role-d">MAY 2024 — SEP 2024</span></div>
+        <p class="role-o">NSG Info · Alexandria, VA</p>
+        <ul class="role-l">
+          <li>Automated Python log monitoring and correlation across infrastructure events, identifying abnormal behavior while supporting vulnerability assessment, remediation, and Linux/network troubleshooting.</li>
+          <li>Summarized infrastructure and security trends through Power BI and technical reporting, translating event data and assessment findings into clear remediation follow-up.</li>
+        </ul>
+      </div>
+      <div class="role-side">
+        <div class="meta-k">Logs → trend</div>
+        <svg class="spark" viewBox="0 0 200 56">
+          <path class="base" d="M0 48 H200"/>
+          <path style="--len:300" d="M0 50 L24 46 L48 40 L72 42 L96 30 L120 33 L144 20 L168 24 L200 10"/>
+        </svg>
+        <div class="role-stack"><span>Python</span><span>Linux</span><span>Log Analysis</span><span>Vuln Assessment</span></div>
+      </div>
+    </article>
 
-        <div class="cert-card earned">
-          <div class="cert-status">Earned</div>
-          <h3 class="cert-name">CompTIA A+</h3>
-          <p class="cert-issuer">CompTIA</p>
-        </div>
+    <article class="role rise">
+      <div>
+        <div class="role-h"><h3 class="role-t">Backend &amp; Systems Engineering</h3><span class="role-d">2024 — PRESENT</span></div>
+        <p class="role-o">Smart Locker Startup</p>
+        <ul class="role-l">
+          <li>Built TypeScript/Node services over PostgreSQL, Redis/BullMQ, REST APIs, AWS, RBAC, Stripe payment flows, and Bluetooth lockers coordinating asynchronous delivery workflows.</li>
+          <li>Designed concurrency controls, idempotent retries, state recovery, and failure isolation for background jobs and device-facing operations, instrumented with Prometheus.</li>
+          <li>Developed Python analytics to forecast locker demand and examine routing and utilization patterns.</li>
+        </ul>
+      </div>
+      <div class="role-side">
+        <div class="meta-k">Queue depth</div>
+        <svg class="spark" viewBox="0 0 200 56">
+          <path class="base" d="M0 48 H200"/>
+          <path style="--len:340" d="M0 46 L18 30 L28 44 L44 16 L56 42 L74 22 L88 45 L104 12 L118 40 L136 26 L152 44 L170 32 L200 45"/>
+        </svg>
+        <div class="role-stack"><span>TypeScript</span><span>PostgreSQL</span><span>Redis</span><span>MQTT</span><span>Stripe</span><span>AWS</span></div>
+      </div>
+    </article>
 
-        <div class="cert-card earned">
-          <div class="cert-status">Earned</div>
-          <h3 class="cert-name">CompTIA Security+</h3>
-          <p class="cert-issuer">CompTIA</p>
-        </div>
+    <article class="role rise">
+      <div>
+        <div class="role-h"><h3 class="role-t">Independent Researcher</h3><span class="role-d">2025 — PRESENT</span></div>
+        <p class="role-o">Multiscale Spatial Statistics</p>
+        <ul class="role-l">
+          <li>Developed covariance-aware chi-square methods and logarithmic null models; ran 1M+ Monte Carlo simulations across 8 validation experiments measuring false-positive calibration, power, sensitivity, and robustness.</li>
+          <li>Benchmarked against DBSCAN and Ripley's K, observing higher detection power in sparse-cluster settings; extended validation to MICrONS (8.2M synapses) and MERFISH (1.37M cells).</li>
+          <li>Authored five technical manuscripts documenting methodology, experimental design, validation results, assumptions, and limitations.</li>
+        </ul>
+      </div>
+      <div class="role-side">
+        <div class="meta-k">Scales covered</div>
+        <svg class="spark" viewBox="0 0 200 56">
+          <path class="base" d="M0 28 H200"/>
+          <path style="--len:260" d="M4 28 L4 18 M4 28 L52 28 L52 14 M52 28 L100 28 L100 20 M100 28 L148 28 L148 12 M148 28 L196 28 L196 8"/>
+        </svg>
+        <div class="role-stack"><span>SciPy</span><span>statsmodels</span><span>Monte Carlo</span><span>Mixed-Effects</span><span>Mediation</span></div>
+      </div>
+    </article>
+  </div>
+</section>
 
-        <div class="cert-card in-progress">
-          <div class="cert-status progress">In Progress</div>
-          <h3 class="cert-name">AWS Solutions Architect</h3>
-          <p class="cert-issuer">Amazon Web Services</p>
-        </div>
-
-        <div class="cert-card in-progress">
-          <div class="cert-status progress">In Progress</div>
-          <h3 class="cert-name">Certified Ethical Hacker</h3>
-          <p class="cert-issuer">EC-Council</p>
-        </div>
-
+<section id="education" data-mark="Education" class="tone">
+  <div class="wrap pl">
+    <div class="sec-head rise" data-n="04"><span class="sec-num">04</span><h2 class="sec-title">Education &amp; Credentials</h2></div>
+    <div class="edu">
+      <div class="edu-c rise">
+        <div class="edu-st"><i></i> In progress</div>
+        <h3 class="edu-deg">M.S. Applied Machine Learning</h3>
+        <p class="edu-sch">University of Maryland, College Park</p>
+        <p class="edu-m">COLLEGE PARK, MD · AUG 2026 — MAY 2028</p>
+        <div class="prog" style="--p:12%"><i></i></div>
+        <div class="prog-l"><span>SEM 1 OF 4</span><span>30 CREDITS</span></div>
+      </div>
+      <div class="edu-c rise d1">
+        <div class="edu-st done"><i></i> Completed</div>
+        <h3 class="edu-deg">B.S. Cybersecurity</h3>
+        <p class="edu-sch">Purdue University</p>
+        <p class="edu-m">WEST LAFAYETTE, IN · AUG 2023 — MAY 2026 · GPA 3.69 / 4.00</p>
+        <div class="prog" style="--p:100%"><i></i></div>
+        <div class="prog-l"><span>COMPLETE</span><span>MAY 2026</span></div>
+        <div class="edu-cw"><em>Selected coursework</em>Applied Machine Learning · Database Fundamentals · Advanced Programming · Statistics · Cloud Engineering · Network &amp; System Administration</div>
       </div>
     </div>
-  </section>
 
-  <!-- Experience Section -->
-  <section class="section section-alt" id="experience">
-    <div class="container">
-      <p class="section-label">BACKGROUND</p>
-      <h2 class="section-title">Experience</h2>
-      <div class="timeline">
+    <div class="certs rise">
+      <div class="cert"><b>CompTIA Security+</b><em>CompTIA</em></div>
+      <div class="cert"><b>AWS AI Practitioner</b><em>AWS</em></div>
+      <div class="cert"><b>AWS Cloud Practitioner</b><em>AWS</em></div>
+      <div class="cert"><b>CompTIA A+</b><em>CompTIA</em></div>
+    </div>
 
-        <div class="timeline-item">
-          <div class="timeline-dot"></div>
-          <div class="timeline-content">
-            <h3 class="timeline-title">Software Engineering Projects</h3>
-            <p class="timeline-period">2023 - Present</p>
-            <p class="timeline-desc">Developed AI-powered analysis tools, cybersecurity detection systems, and scalable backend applications. Built production-grade systems handling real-time data processing, intelligent document analysis, and automated security monitoring.</p>
-            <div class="timeline-tags">
-              <span class="tag">Python</span>
-              <span class="tag">TypeScript</span>
-              <span class="tag">AWS</span>
-              <span class="tag">Docker</span>
-              <span class="tag">OpenAI</span>
-            </div>
-          </div>
-        </div>
-
-        <div class="timeline-item">
-          <div class="timeline-dot"></div>
-          <div class="timeline-content">
-            <h3 class="timeline-title">Smart Locker Startup</h3>
-            <p class="timeline-period">2024 - Present</p>
-            <p class="timeline-desc">Leading backend development for a smart food delivery locker platform. Architecting production systems with Express, Redis, BullMQ, and Bluetooth integration for real-time locker access and predictive analytics.</p>
-            <div class="timeline-tags">
-              <span class="tag">Express</span>
-              <span class="tag">Redis</span>
-              <span class="tag">BullMQ</span>
-              <span class="tag">Bluetooth</span>
-            </div>
-          </div>
-        </div>
-
-        <div class="timeline-item">
-          <div class="timeline-dot"></div>
-          <div class="timeline-content">
-            <h3 class="timeline-title">Computational Neuroscience Research</h3>
-            <p class="timeline-period">2025 - Present</p>
-            <p class="timeline-desc">Developed a universal multiscale spatial fingerprinting framework applied across three biological scales: protein nanoclusters (nm, SMLM), synaptic organization on dendrites (&mu;m, connectomics), and cell type architecture in the mouse brain (mm, MERFISH). Built simulation-based regime theory connecting these systems. Discovered that electrotonic structure shapes synaptic spatial organization via cell-type-specific wiring constraints, validated at population scale across 2,138 neurons. Five manuscripts completed.</p>
-            <div class="timeline-tags">
-              <span class="tag">Python</span>
-              <span class="tag">SciPy</span>
-              <span class="tag">Spatial Statistics</span>
-              <span class="tag">Neuroscience</span>
-            </div>
-          </div>
-        </div>
-
-        <div class="timeline-item">
-          <div class="timeline-dot"></div>
-          <div class="timeline-content">
-            <h3 class="timeline-title">Cybersecurity Research</h3>
-            <p class="timeline-period">2023 - Present</p>
-            <p class="timeline-desc">Conducted network security research including intrusion detection system development, penetration testing, and vulnerability analysis. Built custom NIDS using Python and Scapy with signature and anomaly-based detection.</p>
-            <div class="timeline-tags">
-              <span class="tag">Kali Linux</span>
-              <span class="tag">Scapy</span>
-              <span class="tag">Wireshark</span>
-              <span class="tag">Nmap</span>
-            </div>
-          </div>
-        </div>
-
+    <div class="al rise" style="border-bottom:0;padding-bottom:0">
+      <div class="al-k">Lab work</div>
+      <div>
+        <p class="al-sub" style="margin-top:0">Twenty-plus graded lab courses across the Purdue cybersecurity curriculum: threat-intelligence gathering and packet-filter design, intrusion detection, digital forensics with Magnet AXIOM against real disk images, enterprise cloud deployment on Azure, systems and network administration, plus the legal layer — authorized access and the CFAA, cyberspace regulation, and WBS/RACI project planning. Lab reports are coursework submissions and aren't published; happy to talk through any of it.</p>
       </div>
     </div>
-  </section>
+  </div>
+</section>
 
-  <!-- Contact Section -->
-  <section class="section" id="contact">
-    <div class="container contact-container">
-      <p class="section-label">GET IN TOUCH</p>
-      <h2 class="section-title">Let's Connect</h2>
-      <p class="contact-subtitle">I'm always open to discussing new projects, opportunities, and ideas.</p>
-      <div class="contact-links">
-        <a href="https://github.com/saivoru777-ship-it" target="_blank" class="btn btn-contact">
-          <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
-          GitHub
-        </a>
-        <a href="https://www.linkedin.com/in/pretham-voruganti-79a52a251" target="_blank" class="btn btn-contact">
-          <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
-          LinkedIn
-        </a>
-        <a href="mailto:Prethamvoruganti@gmail.com" class="btn btn-contact">
-          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
-          Email
-        </a>
-      </div>
+<section id="skills" data-mark="Skills">
+  <div class="wrap pl">
+    <div class="sec-head rise" data-n="05"><span class="sec-num">05</span><h2 class="sec-title">Skills</h2></div>
+    <p class="sec-intro rise">Grouped by what I actually use them for, with the work that proves each one. Nothing here is résumé padding — if it's listed, there's a project or a job behind it.</p>
+
+    <div class="sk rise">
+      <div class="sk-k">Programming &amp; Backend</div>
+      <div class="sk-v"><span>Python</span><span>TypeScript</span><span>JavaScript</span><span>Java</span><span>C++</span><span>SQL</span><span>Bash</span><span>Node / Express</span><span>REST APIs</span><span>PostgreSQL</span><span>Redis / BullMQ</span><span>React</span></div>
+      <div class="sk-e">EVIDENCE<br><b>001 002 003</b></div>
     </div>
-  </section>
-
-  <!-- Footer -->
-  <footer class="footer">
-    <div class="container footer-content">
-      <p>&copy; 2026 Pretham Voruganti. Built with precision.</p>
+    <div class="sk rise">
+      <div class="sk-k">Machine Learning &amp; Data</div>
+      <div class="sk-v"><span>Pandas</span><span>NumPy</span><span>SciPy</span><span>Scikit-learn</span><span>TensorFlow</span><span>statsmodels</span><span>Matplotlib</span><span>Power BI</span><span>Anomaly Detection</span><span>Monte Carlo</span><span>Model Validation</span></div>
+      <div class="sk-e">EVIDENCE<br><b>001 · MASTERCARD</b><br><b>RESEARCH</b></div>
     </div>
-  </footer>
+    <div class="sk rise">
+      <div class="sk-k">Cloud &amp; Distributed</div>
+      <div class="sk-v"><span>AWS (EC2, RDS, S3, Lambda, IAM)</span><span>Azure</span><span>Docker</span><span>Kubernetes</span><span>Terraform</span><span>GitHub Actions</span><span>CI/CD</span><span>Linux</span><span>Concurrency</span><span>Fault Recovery</span></div>
+      <div class="sk-e">EVIDENCE<br><b>002 · LABS</b></div>
+    </div>
+    <div class="sk rise">
+      <div class="sk-k">Security &amp; Observability</div>
+      <div class="sk-v"><span>Prometheus</span><span>Packet Analysis</span><span>Telemetry Analysis</span><span>Vulnerability Assessment</span><span>TCP/IP</span><span>Raw Sockets</span><span>Scapy</span><span>Wireshark</span><span>MQTT</span><span>Digital Forensics</span></div>
+      <div class="sk-e">EVIDENCE<br><b>004 · NSG INFO</b><br><b>MASTERCARD</b></div>
+    </div>
+    <div class="sk rise">
+      <div class="sk-k">Research Methods</div>
+      <div class="sk-v"><span>Spatial Statistics</span><span>Mixed-Effects Models</span><span>Mediation Analysis</span><span>Permutation Testing</span><span>Bootstrap CIs</span><span>Experimental Design</span></div>
+      <div class="sk-e">EVIDENCE<br><b>5 MANUSCRIPTS</b></div>
+    </div>
+  </div>
+</section>
 
-  <script src="pro-script.js"></script>
+<section class="contact" id="contact" data-mark="Contact">
+  <div class="wrap pl">
+    <div class="sec-head rise" data-n="06"><span class="sec-num">06</span><h2 class="sec-title" style="font-size:11px;font-family:'IBM Plex Mono',monospace;letter-spacing:.14em;color:var(--ink-dim);text-transform:uppercase">Get in touch</h2></div>
+    <h2 class="cta rise">Let's build something that <em>stays up.</em></h2>
+    <p class="cta-sub rise d1">Open to software engineering roles — backend, infrastructure, applied ML, security tooling. Also happy to just talk about any of the research.</p>
+    <div class="links">
+      <a class="lk rise" href="mailto:Prethamvoruganti@gmail.com"><span class="lk-n">Email</span><span class="lk-v">PRETHAMVORUGANTI@GMAIL.COM</span></a>
+      <a class="lk rise" href="https://github.com/saivoru777-ship-it" target="_blank"><span class="lk-n">GitHub</span><span class="lk-v">SAIVORU777-SHIP-IT</span></a>
+      <a class="lk rise" href="https://www.linkedin.com/in/pretham-voruganti-79a52a251" target="_blank"><span class="lk-n">LinkedIn</span><span class="lk-v">PRETHAM VORUGANTI</span></a>
+      <a class="lk rise" href="resume.pdf" target="_blank"><span class="lk-n">Résumé</span><span class="lk-v">PDF ↗</span></a>
+    </div>
+    <div class="foot">
+      <span>© 2026 Pretham Voruganti</span>
+      <span>Falls Church, VA</span>
+    </div>
+  </div>
+</section>
+
+<script>
+addEventListener('load',()=>document.body.classList.add('loaded'));
+setTimeout(()=>document.body.classList.add('loaded'),400);
+
+
+/* ---------- helix ---------- */
+const VB_H=800, CX=44, AMP=26, PERIODS=3.25, STEPS=150, RUNGS=22;
+const ns='http://www.w3.org/2000/svg';
+const groups=[];
+function buildHelix(into){
+  const strands=[], rungs=[];
+  for(let k=0;k<2;k++){
+    const p=document.createElementNS(ns,'path');
+    p.setAttribute('class','hx-strand'); into.appendChild(p); strands.push(p);
+  }
+  for(let i=1;i<RUNGS;i++){
+    const l=document.createElementNS(ns,'line');
+    l.setAttribute('class','hx-rung'); into.appendChild(l); rungs.push(l);
+  }
+  groups.push({strands,rungs});
+}
+buildHelix(document.getElementById('hx-base'));
+buildHelix(document.getElementById('hx-lit'));
+
+let lastPhase=null;
+function updateHelix(phase){
+  if(lastPhase!==null && Math.abs(phase-lastPhase)<0.004) return;
+  lastPhase=phase;
+  let a='',b='';
+  for(let i=0;i<=STEPS;i++){
+    const t=i/STEPS, y=t*VB_H, ang=t*Math.PI*2*PERIODS+phase;
+    const x1=CX+Math.sin(ang)*AMP, x2=CX+Math.sin(ang+Math.PI)*AMP;
+    a+=(i?'L':'M')+x1.toFixed(2)+' '+y.toFixed(2);
+    b+=(i?'L':'M')+x2.toFixed(2)+' '+y.toFixed(2);
+  }
+  const rg=[];
+  for(let i=1;i<RUNGS;i++){
+    const t=i/RUNGS, y=t*VB_H, ang=t*Math.PI*2*PERIODS+phase;
+    rg.push({
+      x1:(CX+Math.sin(ang)*AMP).toFixed(2), x2:(CX+Math.sin(ang+Math.PI)*AMP).toFixed(2),
+      y:y.toFixed(2), o:(0.16+0.64*Math.abs(Math.cos(ang))).toFixed(2)
+    });
+  }
+  groups.forEach(g=>{
+    g.strands[0].setAttribute('d',a);
+    g.strands[1].setAttribute('d',b);
+    g.rungs.forEach((l,i)=>{
+      const r=rg[i];
+      l.setAttribute('x1',r.x1); l.setAttribute('x2',r.x2);
+      l.setAttribute('y1',r.y); l.setAttribute('y2',r.y);
+      l.setAttribute('opacity',r.o);
+    });
+  });
+}
+const REDUCED=matchMedia('(prefers-reduced-motion:reduce)').matches;
+updateHelix(0);
+
+/* section markers along the helix */
+const marks=[...document.querySelectorAll('section[data-mark]')];
+const mwrap=document.getElementById('hxmarks');
+marks.forEach((s,i)=>{
+  const d=document.createElement('div');
+  d.className='hx-mark'; d.dataset.i=i;
+  d.style.top=(8+(84*i/(marks.length-1)))+'%';
+  d.innerHTML='<i></i>'+s.dataset.mark.toUpperCase();
+  mwrap.appendChild(d);
+});
+const markEls=[...document.querySelectorAll('.hx-mark')];
+
+const hxrect=document.getElementById('hxrect');
+const nav=document.getElementById('nav');
+let ticking=false;
+function onScroll(){
+  const max=document.documentElement.scrollHeight-innerHeight;
+  const pct=max>0?Math.min(1,Math.max(0,scrollY/max)):0;
+  hxrect.setAttribute('height',(pct*VB_H).toFixed(1));
+  if(!REDUCED) updateHelix(pct*Math.PI*4);
+  nav.classList.toggle('stuck',scrollY>30);
+  ticking=false;
+}
+addEventListener('scroll',()=>{if(!ticking){requestAnimationFrame(onScroll);ticking=true;}},{passive:true});
+addEventListener('resize',onScroll);
+onScroll();
+
+/* which section is active -> light its marker */
+const secIO=new IntersectionObserver(es=>{
+  es.forEach(e=>{
+    if(!e.isIntersecting)return;
+    const i=marks.indexOf(e.target);
+    markEls.forEach(m=>m.classList.toggle('on',+m.dataset.i===i));
+  });
+},{threshold:.01,rootMargin:'-45% 0px -45% 0px'});
+marks.forEach(s=>secIO.observe(s));
+
+/* reveal on scroll */
+const io=new IntersectionObserver(es=>{
+  es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target);}});
+},{threshold:.12,rootMargin:'0px 0px -60px 0px'});
+document.querySelectorAll('.rise,.slide-l,.slide-r,.entry,.role,.edu-c').forEach(el=>io.observe(el));
+
+/* scale axis sync */
+const studies=[...document.querySelectorAll('.study')];
+const ticks=[...document.querySelectorAll('.tick')];
+const axisline=document.getElementById('axisline');
+const tops=[6,28,50,72,94];
+const sio=new IntersectionObserver(es=>{
+  es.forEach(e=>{
+    if(!e.isIntersecting)return;
+    const i=+e.target.dataset.i;
+    studies.forEach(s=>s.classList.toggle('on',+s.dataset.i===i));
+    ticks.forEach(t=>t.classList.toggle('on',+t.dataset.i===i));
+    axisline.style.setProperty('--sp',tops[i]+'%');
+  });
+},{threshold:.5,rootMargin:'-25% 0px -25% 0px'});
+studies.forEach(s=>sio.observe(s));
+studies[0].classList.add('on');ticks[0].classList.add('on');
+axisline.style.setProperty('--sp','6%');
+
+/* smooth anchors */
+document.querySelectorAll('a[href^="#"]').forEach(a=>{
+  a.addEventListener('click',e=>{
+    const h=a.getAttribute('href');
+    if(h==='#'){e.preventDefault();scrollTo({top:0,behavior:'smooth'});return;}
+    let t;try{t=document.querySelector(h);}catch(_){return;}
+    if(!t)return;
+    e.preventDefault();
+    scrollTo({top:t.getBoundingClientRect().top+scrollY-70,behavior:'smooth'});
+  });
+});
+
+/* ---------- drawers ---------- */
+const mp=document.getElementById('more-projects'), mpanel=document.getElementById('more-projects-panel');
+if(mp&&mpanel){
+  mp.addEventListener('click',()=>{
+    const open=mpanel.hidden;
+    mpanel.hidden=!open;
+    mp.setAttribute('aria-expanded',String(open));
+    mp.querySelector('.more-lbl').textContent = open ? 'Hide extra projects' : 'Show 4 more projects';
+    if(open) requestAnimationFrame(()=>
+      mpanel.querySelectorAll('.rise').forEach(el=>el.classList.add('in')));
+    else mp.scrollIntoView({behavior:'smooth',block:'center'});
+  });
+}
+document.querySelectorAll('.repo-btn').forEach(btn=>{
+  btn.addEventListener('click',()=>{
+    const panel=btn.nextElementSibling, open=panel.hidden;
+    panel.hidden=!open;
+    btn.setAttribute('aria-expanded',String(open));
+  });
+});
+</script>
 </body>
 </html>
